@@ -1,0 +1,49 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:converters="clr-namespace:Filtration.Common.Converters"
+                    mc:Ignorable="d" >
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary>
+            <Style x:Key="PathOfExileFont">
+                <Setter Property="TextElement.FontFamily" Value="pack://application:,,,/resources/#Fontin SmallCaps" />
+            </Style>
+            <Style x:Key="ChromelessToggleButton" TargetType="{x:Type ToggleButton}">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="ToggleButton">
+                            <Border BorderThickness="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                <ContentPresenter/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="ChromelessButton" TargetType="{x:Type Button}">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border BorderThickness="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                <ContentPresenter/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style TargetType="{x:Type Border}" x:Key="BlockItemBorder">
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="BorderBrush" Value="Black" />
+                <Setter Property="CornerRadius" Value="3" />
+                <Setter Property="Margin" Value="0,0,5,5" />
+            </Style>
+            <converters:StringToVisibilityConverter x:Key="StringToVisibilityConverter" />
+            <converters:BooleanInverterConverter x:Key="BoolInverterConverter" />
+            <converters:ColorToSolidColorBrushConverter x:Key="ColorToSolidColorBrushConverter" />
+            <converters:BooleanVisibilityConverter x:Key="BooleanVisibilityConverter" />
+            <converters:InverseBooleanVisibilityConverter x:Key="InverseBooleanVisibilityConverter" />
+            
+            
+        </ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

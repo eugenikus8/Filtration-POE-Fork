@@ -1,0 +1,56 @@
+﻿<Window x:Class="Filtration.Views.ReplaceColorsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:viewModels="clr-namespace:Filtration.ViewModels"
+        xmlns:userControls="clr-namespace:Filtration.UserControls"
+        xmlns:utilities="clr-namespace:Filtration.Common.Utilities;assembly=Filtration.Common"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance Type=viewModels:ReplaceColorsViewModel}"
+        Title="Replace Script Colors" Height="280" Width="540"
+        BorderThickness="1" BorderBrush="Black"
+        Loaded="ReplaceColorsWindow_OnLoaded" ResizeMode="CanMinimize">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="5"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <CheckBox Grid.Row="0" Grid.Column="0" Content="Replace Text Color" IsChecked="{Binding ReplaceTextColor}" />
+        <TextBlock Grid.Row="0" Grid.Column="2" VerticalAlignment="Center">Existing Text Color</TextBlock>
+        <xctk:ColorPicker Grid.Row="0" Grid.Column="4" SelectedColor="{Binding ReplaceColorsParameterSet.OldTextColor}" AvailableColors="{x:Static utilities:PathOfExileColors.DefaultColors}" ShowAvailableColors="True" AvailableColorsHeader="Path of Exile Colors" />
+        <TextBlock Grid.Row="1" Grid.Column="2" VerticalAlignment="Center">New Text Color</TextBlock>
+        <xctk:ColorPicker Grid.Row="1" Grid.Column="4" SelectedColor="{Binding NewTextColor}" AvailableColors="{x:Static utilities:PathOfExileColors.DefaultColors}" ShowAvailableColors="True" AvailableColorsHeader="Path of Exile Colors" />
+
+
+        <CheckBox Grid.Row="2" Grid.Column="0" Content="Replace Background Color" IsChecked="{Binding ReplaceBackgroundColor}" />
+        <TextBlock Grid.Row="2" Grid.Column="2" VerticalAlignment="Center">Existing Background Color</TextBlock>
+        <xctk:ColorPicker Grid.Row="2" Grid.Column="4" SelectedColor="{Binding ReplaceColorsParameterSet.OldBackgroundColor}" AvailableColors="{x:Static utilities:PathOfExileColors.DefaultColors}" ShowAvailableColors="True" AvailableColorsHeader="Path of Exile Colors" />
+        <TextBlock Grid.Row="3" Grid.Column="2" VerticalAlignment="Center">New Background Color</TextBlock>
+        <xctk:ColorPicker Grid.Row="3" Grid.Column="4" SelectedColor="{Binding NewBackgroundColor}" AvailableColors="{x:Static utilities:PathOfExileColors.DefaultColors}" ShowAvailableColors="True" AvailableColorsHeader="Path of Exile Colors" />
+
+        <CheckBox Grid.Row="4" Grid.Column="0" Content="Replace Border Color" IsChecked="{Binding ReplaceBorderColor}" />
+        <TextBlock Grid.Row="4" Grid.Column="2" VerticalAlignment="Center">Existing Border Color</TextBlock>
+        <xctk:ColorPicker Grid.Row="4" Grid.Column="4" SelectedColor="{Binding ReplaceColorsParameterSet.OldBorderColor}" AvailableColors="{x:Static utilities:PathOfExileColors.DefaultColors}" ShowAvailableColors="True" AvailableColorsHeader="Path of Exile Colors" />
+        <TextBlock Grid.Row="5" Grid.Column="2" VerticalAlignment="Center">New Border Color</TextBlock>
+        <xctk:ColorPicker Grid.Row="5" Grid.Column="4" SelectedColor="{Binding NewBorderColor}" AvailableColors="{x:Static utilities:PathOfExileColors.DefaultColors}" ShowAvailableColors="True" AvailableColorsHeader="Path of Exile Colors" />
+
+        <userControls:ItemPreviewControl Grid.Row="6" Grid.Column="4" TextColor="{Binding DisplayTextColor}" BackgroundColor="{Binding DisplayBackgroundColor}" BorderColor="{Binding DisplayBorderColor}" />
+        <TextBlock Grid.Row="6" Grid.Column="2" VerticalAlignment="Center">Preview</TextBlock>
+        <Button Grid.Row="7" Grid.Column="4" Command="{Binding ReplaceColorsCommand}">Replace Colors</Button>
+    </Grid>
+</Window>

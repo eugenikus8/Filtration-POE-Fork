@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Filtration</id>
+    <!-- version will be replaced by MSBuild -->
+    <version>0.0.0.0</version>
+    <title>Filtration</title>
+    <authors>Ben Wallis</authors>
+    <description>A Path of Exile loot filter script editor</description>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright 2019</copyright>
+    <releaseNotes>* Added Blight League Item Base Types and Item Classes to static data
+* Adding the first Block Group to a script will now enable Block Groups for the script
+* Removing the last Block Group from a script will now disable Block Groups for the script</releaseNotes>
+    <dependencies />
+  </metadata>
+  <files>
+    <file src="*.*" target="lib\net45\" exclude="*.pdb;*.nupkg;*.vshost.*;*.xml;*.log"/>
+    <file src="Resources\AlertSounds\*.mp3" target="lib\net45\Resources\AlertSounds\" />
+  </files>
+</package>
