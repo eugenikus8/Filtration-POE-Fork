@@ -1,0 +1,51 @@
+<Application x:Class="Filtration.App" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:converters="clr-namespace:Filtration.Converters"
+             Startup="Application_Startup">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Filtration.Common;component/Styles/SharedResourcesDictionary.xaml" />
+                
+                <ResourceDictionary Source="pack://application:,,,/Fluent;Component/Themes/Generic.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Fluent;component/Themes/Themes/Dark.Cobalt.xaml" />
+                <ResourceDictionary Source="Views/Styles/Colours.xaml" />
+                <ResourceDictionary Source="Views/Styles/CheckBox.xaml" />
+                <ResourceDictionary Source="Views/Styles/ListBoxItem.xaml" />
+                <ResourceDictionary Source="Views/Styles/TreeViewItem.xaml" />
+
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Light.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.ComboBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.RadioButton.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.Scrollbars.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.TextBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.ListView.xaml" />
+
+                <ResourceDictionary Source="Views/CrossButton.xaml" />
+                <ResourceDictionary Source="Views/IconsDictionary.xaml" />
+                <ResourceDictionary Source="Views/ExpanderStyle.xaml" />              
+                             
+                <ResourceDictionary>
+                    <Style TargetType="ComboBox" BasedOn="{StaticResource MahApps.Styles.ComboBox}" />
+                    <Style TargetType="ComboBoxItem" BasedOn="{StaticResource MahApps.Styles.ComboBoxItem}" />
+                    <Style TargetType="ScrollBar" BasedOn="{StaticResource MahApps.Styles.ScrollBar}" />
+                    <Style TargetType="TextBox" BasedOn="{StaticResource MahApps.Styles.TextBox}" />
+                </ResourceDictionary>
+                <ResourceDictionary>
+                    <converters:BlockItemToRemoveEnabledVisibilityConverter x:Key="BlockItemToRemoveEnabledVisibilityConverter" />
+                    <converters:IntToItemRarityConverter x:Key="IntToItemRarityConverter" />
+                    <converters:BooleanToBlockActionConverter x:Key="BooleanToBlockActionConverter" />
+                    <converters:BlockItemTypeToStringConverter x:Key="BlockItemTypeToStringConverter" />
+                    <converters:BooleanToBlockActionInverseConverter x:Key="BooleanToBlockActionInverseConverter" />
+                    <converters:AvailableThemeComponentsConverter x:Key="AvailableThemeComponentsConverter" />
+                </ResourceDictionary>
+                <ResourceDictionary>
+                    <RoutedCommand x:Key="OpenScriptRoutedCommand" />
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

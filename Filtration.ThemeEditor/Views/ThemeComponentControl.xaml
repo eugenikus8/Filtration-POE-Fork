@@ -1,0 +1,139 @@
+﻿<UserControl x:Class="Filtration.ThemeEditor.Views.ThemeComponentControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+             xmlns:commonConverters="clr-namespace:Filtration.Common.Converters;assembly=Filtration.Common"
+             xmlns:themeEditor="clr-namespace:Filtration.ObjectModel.ThemeEditor;assembly=Filtration.ObjectModel"
+             xmlns:views="clr-namespace:Filtration.ThemeEditor.Views"
+             xmlns:extensions="clr-namespace:Filtration.Common.Extensions;assembly=Filtration.Common"
+             xmlns:enums="clr-namespace:Filtration.ObjectModel.Enums;assembly=Filtration.ObjectModel"
+             xmlns:utilities="clr-namespace:Filtration.Common.Utilities;assembly=Filtration.Common"
+             mc:Ignorable="d" 
+             d:DataContext="{d:DesignInstance Type=themeEditor:ThemeComponent}"
+             d:DesignHeight="100" d:DesignWidth="200">
+    <UserControl.Resources>
+        <commonConverters:BooleanVisibilityConverter x:Key="BooleanVisibilityConverter" />
+    </UserControl.Resources>
+    <Grid Width="200">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.Resources>
+            <DataTemplate x:Key="EditableComponentNameTemplate">
+                <StackPanel>
+                    <TextBlock Text="{Binding UsageCount, StringFormat='Usages: {0}'}"
+                               FontSize="10"
+                               HorizontalAlignment="Right"
+                               Visibility="{Binding Path=DataContext.EditEnabled, RelativeSource={RelativeSource AncestorType={x:Type views:ThemeEditorView}}, Converter={StaticResource BooleanVisibilityConverter}}">
+                        <TextBlock.Style>
+                            <Style TargetType="TextBlock">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding UsageCount}" Value="0">
+                                        <Setter Property="Foreground" Value="Red" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                                <Setter Property="Foreground" Value="SteelBlue" />
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                    <TextBox Text="{Binding ComponentName}" />
+                </StackPanel>
+            </DataTemplate>
+            <DataTemplate x:Key="ViewOnlyComponentNameTemplate">
+                <TextBlock Text="{Binding ComponentName}" ToolTip="{Binding ComponentName}" />
+            </DataTemplate>
+        </Grid.Resources>
+        <ContentControl Grid.Row="1" Content="{Binding}">
+            <ContentControl.Style>
+                <Style TargetType="ContentControl">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Path=DataContext.IsMasterTheme, RelativeSource={RelativeSource AncestorType={x:Type views:ThemeEditorView}}}" Value="true">
+                            <Setter Property="ContentTemplate" Value="{StaticResource EditableComponentNameTemplate}" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=DataContext.IsMasterTheme, RelativeSource={RelativeSource AncestorType={x:Type views:ThemeEditorView}}}" Value="false">
+                            <Setter Property="ContentTemplate" Value="{StaticResource ViewOnlyComponentNameTemplate}" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </ContentControl.Style>
+        </ContentControl>
+        <ContentControl Grid.Row="2" Content="{Binding Mode=OneWay}">
+            <ContentControl.Resources>
+                <!-- Color Theme Template -->
+                <DataTemplate DataType="{x:Type themeEditor:ColorThemeComponent}">
+                    <xctk:ColorPicker SelectedColor="{Binding Color}" AvailableColors="{x:Static utilities:PathOfExileColors.DefaultColors}" ShowAvailableColors="True" AvailableColorsHeader="Path of Exile Colors" MouseDown="ColorPicker_OnMouseDown" />
+                </DataTemplate>
+
+                <!-- Integer Theme Template -->
+                <DataTemplate  DataType="{x:Type themeEditor:IntegerThemeComponent}">
+                    <xctk:ShortUpDown Value="{Binding Value}" />
+                </DataTemplate>
+
+                <!-- String Integer Theme Template -->
+                <DataTemplate  DataType="{x:Type themeEditor:StrIntThemeComponent}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBox Grid.Column="0" Text="{Binding Value}" Height="25" Padding="2,-15,0,0" />
+                        <xctk:ShortUpDown Grid.Column="1" Value="{Binding SecondValue}" HorizontalAlignment="Right"/>
+                    </Grid>
+                </DataTemplate>
+
+                <!--TODO:File block type and string block type should be separate-->
+                <!-- Custom Sound Theme Template -->
+                <DataTemplate DataType="{x:Type themeEditor:StringThemeComponent}">
+                    <Grid>
+                        <!--TODO: Add play sound support-->
+                        <!--<Button Grid.Column="0" Command="{Binding PlayCustomSoundCommand}" Width="20" Height="20" Background="Transparent" BorderBrush="Transparent">
+                            <Image Source="/Filtration.ThemeEditor;component/Resources/speaker_icon.png"  VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        </Button>-->
+                        <ComboBox ItemsSource="{Binding CustomSoundsAvailable}" 
+                                      SelectedValue="{Binding Value}" Style="{StaticResource MahApps.Styles.ComboBox}"/>
+                        <Button Command="{Binding CustomSoundFileDialogCommand}"
+                                    Width="20" Height="20" Background="Transparent" BorderBrush="Transparent" Margin="0,0,30,0" VerticalAlignment="Center" HorizontalAlignment="Right">
+                            <Image Source="/Filtration.ThemeEditor;component/Resources/open_icon.png"/>
+                        </Button>
+                    </Grid>
+                </DataTemplate>
+
+                 <!--Icon Theme Template--> 
+                <DataTemplate  DataType="{x:Type themeEditor:IconThemeComponent}">
+                    <StackPanel Orientation="Vertical" Margin="5,5,5,5">
+                        <ComboBox ItemsSource="{Binding Source={extensions:Enumeration {x:Type enums:IconSize}}}" Style="{StaticResource MahApps.Styles.ComboBox}"
+                                                              DisplayMemberPath="Description"
+                                                              SelectedValue="{Binding IconSize}"
+                                                              SelectedValuePath="Value" />
+                        <ComboBox ItemsSource="{Binding Source={extensions:Enumeration {x:Type enums:IconColor}}}" Style="{StaticResource MahApps.Styles.ComboBox}"
+                                                              DisplayMemberPath="Description"
+                                                              SelectedValue="{Binding IconColor}"
+                                                              SelectedValuePath="Value" />
+                        <ComboBox ItemsSource="{Binding Source={extensions:Enumeration {x:Type enums:IconShape}}}" Style="{StaticResource MahApps.Styles.ComboBox}"
+                                                              DisplayMemberPath="Description"
+                                                              SelectedValue="{Binding IconShape}"
+                                                              SelectedValuePath="Value" />
+                    </StackPanel>
+                </DataTemplate>
+
+                 <!--Effect Color Theme Template--> 
+                <DataTemplate  DataType="{x:Type themeEditor:EffectColorThemeComponent}">
+                    <StackPanel>
+                        <WrapPanel VerticalAlignment="Center" Margin="5,5,5,5">
+                            <RadioButton IsChecked="{Binding Temporary, Converter={StaticResource BoolInverterConverter}}" Margin="0,0,10,0">Permanent</RadioButton>
+                            <RadioButton IsChecked="{Binding Temporary}" >Temporary</RadioButton>
+                        </WrapPanel>
+                        <ComboBox ItemsSource="{Binding Source={extensions:Enumeration {x:Type enums:EffectColor}}}" Style="{StaticResource MahApps.Styles.ComboBox}"
+                                                              DisplayMemberPath="Description"
+                                                              SelectedValue="{Binding EffectColor}"
+                                                              SelectedValuePath="Value" />
+                    </StackPanel>
+                </DataTemplate>
+            </ContentControl.Resources>
+        </ContentControl>
+    </Grid>
+</UserControl>
