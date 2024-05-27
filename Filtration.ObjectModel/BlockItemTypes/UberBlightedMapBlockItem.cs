@@ -15,9 +15,9 @@ namespace Filtration.ObjectModel.BlockItemTypes
         }
 
         public override string PrefixText => "UberBlightedMap";
-        public override string DisplayHeading => "Uber Blighted Map";
+        public override string DisplayHeading => "UberBlightedMap";
         public override Color SummaryBackgroundColor => Colors.DarkKhaki;
         public override Color SummaryTextColor => Colors.Black;
-        public override BlockItemOrdering SortOrder => BlockItemOrdering.BligtedMap;
+        public override BlockItemOrdering SortOrder => BlockItemOrdering.UberBlightedMap;
     }
 }

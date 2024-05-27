@@ -60,7 +60,12 @@
     <Compile Include="BlockItemBaseTypes\IntegerBlockItem.cs" />
     <Compile Include="BlockItemBaseTypes\NumericFilterPredicateBlockItem.cs" />
     <Compile Include="BlockItemBaseTypes\StringListBlockItem.cs" />
+    <Compile Include="BlockItemTypes\TransfiguredGemBlockItem.cs" />
     <Compile Include="BlockItemTypes\AnyEnchantmentBlockItem.cs" />
+    <Compile Include="BlockItemTypes\MinimalBlockItem.cs" />
+    <Compile Include="BlockItemTypes\HasEaterOfWorldsImplicitBlockItem.cs" />
+    <Compile Include="BlockItemTypes\HasCruciblePassiveTreeBlockItem.cs" />
+    <Compile Include="BlockItemTypes\HasSearingExarchImplicitBlockItem.cs" />
     <Compile Include="BlockItemTypes\BaseDefencePercentilelBlockItem.cs" />
     <Compile Include="BlockItemTypes\BaseEnergyShieldlBlockItem.cs" />
     <Compile Include="BlockItemTypes\EnchantmentPassiveNum.cs" />
@@ -69,6 +74,10 @@
     <Compile Include="BlockItemTypes\BaseArmourlBlockItem.cs" />
     <Compile Include="BlockItemTypes\BackgroundColorBlockItem.cs" />
     <Compile Include="BlockItemTypes\BaseTypeBlockItem.cs" />
+    <Compile Include="BlockItemTypes\EnchantmentPassiveNode.cs" />
+    <Compile Include="BlockItemTypes\ContinueBlockItem.cs" />
+    <Compile Include="BlockItemTypes\HasExplicitModBlockItem.cs" />
+    <Compile Include="BlockItemTypes\HasImplicitModBlockItem.cs" />
     <Compile Include="BlockItemTypes\GemQualityTypeBlockItem.cs" />
     <Compile Include="BlockItemTypes\UberBlightedMapBlockItem.cs" />
     <Compile Include="BlockItemTypes\BlightedMapBlockItem.cs" />
@@ -82,9 +91,7 @@
     <Compile Include="BlockItemTypes\CustomSoundBlockItem.cs" />
     <Compile Include="BlockItemTypes\DisableDropSoundBlockItem.cs" />
     <Compile Include="BlockItemTypes\GemLevelBlockItem.cs" />
-    <Compile Include="BlockItemTypes\HasExplicitModBlockItem.cs" />
     <Compile Include="BlockItemTypes\MapIconBlockItem.cs" />
-    <Compile Include="BlockItemTypes\ProphecyBlockItem.cs" />
     <Compile Include="BlockItemTypes\ScourgedBlockItem.cs" />
     <Compile Include="BlockItemTypes\SynthesisedItemBlockItem.cs" />
     <Compile Include="BlockItemTypes\CorruptedBlockItem.cs" />
@@ -130,6 +137,7 @@
     <Compile Include="Enums\IconColor.cs" />
     <Compile Include="Enums\IconShape.cs" />
     <Compile Include="Enums\IconSize.cs" />
+    <Compile Include="Enums\GemQualityType.cs" />
     <Compile Include="Enums\ItemRarity.cs" />
     <Compile Include="Enums\SocketColor.cs" />
     <Compile Include="Enums\ThemeComponentType.cs" />

@@ -5,11 +5,11 @@ using Filtration.ObjectModel.Enums;
 
 namespace Filtration.ObjectModel.BlockItemTypes
 {
-    public class ProphecyBlockItem : StringListBlockItem
+    public class EnchantmentPassiveNodeBlockItem : StringListBlockItem
     {
-        public override string PrefixText => "Prophecy";
+        public override string PrefixText => "EnchantmentPassiveNode";
         public override int MaximumAllowed => 1;
-        public override string DisplayHeading => "Prophecy";
+        public override string DisplayHeading => "ClusterJewelsNode";
 
         public override string SummaryText
         {
@@ -17,23 +17,23 @@ namespace Filtration.ObjectModel.BlockItemTypes
             {
                 if (Items.Count > 0 && Items.Count < 4)
                 {
-                    return "Prophecies: " +
+                    return "Cluster Jewels Node: " +
                            Items.Aggregate(string.Empty, (current, i) => current + i + ", ").TrimEnd(' ').TrimEnd(',');
                 }
                 if (Items.Count >= 4)
                 {
                     var remaining = Items.Count - 3;
-                    return "Prophecies: " + Items.Take(3)
+                    return "Cluster Jewels Node: " + Items.Take(3)
                         .Aggregate(string.Empty, (current, i) => current + i + ", ")
                         .TrimEnd(' ')
                         .TrimEnd(',') + " (+" + remaining + " more)";
                 }
-                return "Prophecies: (none)";
+                return "Cluster Jewels Node: (none)";
             }
         }
 
-        public override Color SummaryBackgroundColor => Colors.DarkMagenta;
+        public override Color SummaryBackgroundColor => Colors.CornflowerBlue;
         public override Color SummaryTextColor => Colors.White;
-        public override BlockItemOrdering SortOrder => BlockItemOrdering.Prophecy;
+        public override BlockItemOrdering SortOrder => BlockItemOrdering.EnchantmentPassiveNode;
     }
 }

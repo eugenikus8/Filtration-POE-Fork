@@ -9,7 +9,7 @@ namespace Filtration.ObjectModel.BlockItemTypes
     {
         public override string PrefixText => "HasInfluence";
         public override int MaximumAllowed => 1;
-        public override string DisplayHeading => "Has Influence";
+        public override string DisplayHeading => "Influence";
 
         public override string SummaryText
         {

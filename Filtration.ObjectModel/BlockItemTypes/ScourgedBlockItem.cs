@@ -16,8 +16,8 @@ namespace Filtration.ObjectModel.BlockItemTypes
 
         public override string PrefixText => "Scourged";
         public override string DisplayHeading => "Scourged";
-        public override Color SummaryBackgroundColor => Colors.DarkOrange;
-        public override Color SummaryTextColor => Colors.Black;
+        public override Color SummaryBackgroundColor => Colors.OrangeRed;
+        public override Color SummaryTextColor => Colors.White;
         public override BlockItemOrdering SortOrder => BlockItemOrdering.Scourged;
     }
 }

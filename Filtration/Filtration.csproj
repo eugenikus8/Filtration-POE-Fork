@@ -112,6 +112,7 @@
     <Compile Include="Converters\BlockItemToRemoveEnabledVisibilityConverter.cs" />
     <Compile Include="Converters\DisabledDefaultSoundConverter.cs" />
     <Compile Include="Converters\DisabledDefaultSoundTooltipConverter.cs" />
+    <Compile Include="Converters\GemQualityTypeConverter.cs" />
     <Compile Include="Converters\MinimapIconToCroppedBitmapConverter.cs" />
     <Compile Include="Converters\HashSignRemovalConverter.cs" />
     <Compile Include="Converters\ItemRarityConverter.cs" />
@@ -363,10 +364,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Resource Include="Resources\GemQualityTypeTypes.txt" />
+    <Resource Include="Resources\EnchantmentPassiveNode.txt" />
     <EmbeddedResource Include="Resources\InfluenceTypes.txt" />
     <EmbeddedResource Include="Resources\Enchantments.txt" />
-    <EmbeddedResource Include="Resources\Prophecies.txt" />
     <EmbeddedResource Include="Resources\ItemMods.txt" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

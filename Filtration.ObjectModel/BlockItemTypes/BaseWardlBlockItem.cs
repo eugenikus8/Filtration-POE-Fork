@@ -15,13 +15,13 @@ namespace Filtration.ObjectModel.BlockItemTypes
         }
 
         public override string PrefixText => "BaseWard";
-        public override int MaximumAllowed => 2;
-        public override string DisplayHeading => "Base Ward";
+        public override int MaximumAllowed => 1;
+        public override string DisplayHeading => "BaseWard";
         public override string SummaryText => "Base Ward " + FilterPredicate;
-        public override Color SummaryBackgroundColor => Colors.DarkGray;
+        public override Color SummaryBackgroundColor => Colors.BlueViolet;
         public override Color SummaryTextColor => Colors.White;
         public override BlockItemOrdering SortOrder => BlockItemOrdering.BaseWard;
         public override int Minimum => 0;
-        public override int Maximum => 5555;
+        public override int Maximum => 9999;
     }
 }

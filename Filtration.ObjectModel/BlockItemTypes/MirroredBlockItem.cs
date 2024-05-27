@@ -16,7 +16,7 @@ namespace Filtration.ObjectModel.BlockItemTypes
 
         public override string PrefixText => "Mirrored";
         public override string DisplayHeading => "Mirrored";
-        public override Color SummaryBackgroundColor => Colors.DarkRed;
+        public override Color SummaryBackgroundColor => Colors.DarkGray;
         public override Color SummaryTextColor => Colors.White;
         public override BlockItemOrdering SortOrder => BlockItemOrdering.Mirrored;
     }

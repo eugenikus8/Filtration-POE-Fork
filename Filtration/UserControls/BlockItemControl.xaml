@@ -50,16 +50,16 @@
 
                     <!-- NumericFilterPredicate Template -->
                     <DataTemplate DataType="{x:Type blockItemBaseTypes:NumericFilterPredicateBlockItem}">
-                        <userControls:NumericFilterPredicateControl Margin="5,5,5,5" NumericFilterPredicate="{Binding FilterPredicate}" Minimum="{Binding Minimum, Mode=OneTime}" Maximum="{Binding Maximum, Mode=OneTime}" />
+                        <userControls:NumericFilterPredicateControl Margin="1,1,1,1" NumericFilterPredicate="{Binding FilterPredicate}" Minimum="{Binding Minimum, Mode=OneTime}" Maximum="{Binding Maximum, Mode=OneTime}" />
                     </DataTemplate>
 
                     <!-- Rarity Template -->
                     <DataTemplate DataType="{x:Type blockItemTypes:RarityBlockItem}">
-                        <StackPanel Orientation="Horizontal" Margin="5,5,5,5">
+                        <StackPanel Orientation="Horizontal" Margin="1,1,1,1">
                             <ComboBox ItemsSource="{Binding Source={extensions:Enumeration {x:Type enums:FilterPredicateOperator}}}"
                                                               DisplayMemberPath="Description"
                                                               SelectedValue="{Binding FilterPredicate.PredicateOperator}"
-                                                              SelectedValuePath="Value" Width="50" Margin="0,0,6,0"  />
+                                                              SelectedValuePath="Value" Width="50" Margin="0,0,4,0"  />
                             <ComboBox ItemsSource="{Binding Source={extensions:Enumeration {x:Type enums:ItemRarity}}}"
                                                               DisplayMemberPath="Description"
                                                               SelectedValue="{Binding FilterPredicate.PredicateOperand, Converter={StaticResource IntToItemRarityConverter}}"
@@ -67,6 +67,22 @@
                         </StackPanel>
                     </DataTemplate>
 
+					
+					<!-- GemQualityType Template -->
+					<DataTemplate DataType="{x:Type blockItemTypes:GemQualityTypeBlockItem}">
+						<StackPanel Orientation="Horizontal" Margin="1,1,1,1">
+							<ComboBox ItemsSource="{Binding Source={extensions:Enumeration {x:Type enums:FilterPredicateOperator}}}"
+                                                              DisplayMemberPath="Description"
+                                                              SelectedValue="{Binding FilterPredicate.PredicateOperator}"
+                                                              SelectedValuePath="Value" Width="50" Margin="0,0,4,0"  />
+							<ComboBox ItemsSource="{Binding Source={extensions:Enumeration {x:Type enums:GemQualityType}}}"
+                                                              DisplayMemberPath="Description"
+                                                              SelectedValue="{Binding FilterPredicate.PredicateOperand, Converter={StaticResource IntToGemQualityTypeConverter}}"
+                                                              SelectedValuePath="Value" />
+						</StackPanel>
+					</DataTemplate>
+					
+					
                     <!-- Class Template -->
                     <DataTemplate DataType="{x:Type blockItemTypes:ClassBlockItem}">
                         <userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" AutoCompleteItemsSource="{Binding ElementName=TopLevelGrid, Path=DataContext.AutoCompleteItemClasses}" />
@@ -75,11 +91,6 @@
                     <!-- Base Type Template -->
                     <DataTemplate DataType="{x:Type blockItemTypes:BaseTypeBlockItem}">
                         <userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" AutoCompleteItemsSource="{Binding ElementName=TopLevelGrid, Path=DataContext.AutoCompleteItemBaseTypes}" />
-                    </DataTemplate>
-
-                    <!-- Prophecy Template -->
-                    <DataTemplate DataType="{x:Type blockItemTypes:ProphecyBlockItem}">
-                        <userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" AutoCompleteItemsSource="{Binding ElementName=TopLevelGrid, Path=DataContext.AutoCompleteProphecies}" />
                     </DataTemplate>
 
                     <!-- Explicit Mods Template -->
@@ -95,8 +106,12 @@
                     <DataTemplate DataType="{x:Type blockItemTypes:HasInfluenceBlockItem}">
                         <userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" AutoCompleteItemsSource="{Binding ElementName=TopLevelGrid, Path=DataContext.AutocompleteInfluenceTypes}" />
                     </DataTemplate>
-					<DataTemplate DataType="{x:Type blockItemTypes:GemQualityTypeBlockItem}">
-						<userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" AutoCompleteItemsSource="{Binding ElementName=TopLevelGrid, Path=DataContext.AutocompleteGemQualityTypeTypes}" />
+
+					
+					
+					
+					<DataTemplate DataType="{x:Type blockItemTypes:EnchantmentPassiveNodeBlockItem}">
+						<userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" AutoCompleteItemsSource="{Binding ElementName=TopLevelGrid, Path=DataContext.AutocompleteEnchantmentPassiveNode}" />
 					</DataTemplate>
 					
 					
@@ -105,6 +120,15 @@
                     <DataTemplate DataType="{x:Type blockItemTypes:SocketGroupBlockItem}">
                         <userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" />
                     </DataTemplate>
+
+					<!-- SocketsBlock Template -->
+					<DataTemplate DataType="{x:Type blockItemTypes:SocketsBlockItem}">
+						<userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" />
+					</DataTemplate>
+					
+					
+					
+					
 
                     <!-- Play Effect Block Template -->
                     <DataTemplate DataType="{x:Type blockItemTypes:PlayEffectBlockItem}">

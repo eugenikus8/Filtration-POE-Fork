@@ -137,6 +137,8 @@ namespace Filtration.Parser.Services
                         AddNumericFilterPredicateItemToBlockItems<QualityBlockItem>(block,trimmedLine);
                         break;
                     }
+
+
                     case "Rarity":
                     {
                         RemoveExistingBlockItemsOfType<RarityBlockItem>(block);
@@ -154,6 +156,31 @@ namespace Filtration.Parser.Services
                         block.BlockItems.Add(blockItemValue);
                         break;
                     }
+
+                    case "GemQualityType":
+                    {
+                         RemoveExistingBlockItemsOfType<GemQualityTypeBlockItem>(block);
+
+                         var blockItemValue = new GemQualityTypeBlockItem();
+                         var result = Regex.Match(trimmedLine, @"^\w+\s+([><!=]{0,2})\s*(\w+)$");
+                         if (result.Groups.Count == 3)
+                         {
+                             blockItemValue.FilterPredicate.PredicateOperator =
+                                 EnumHelper.GetEnumValueFromDescription<FilterPredicateOperator>(string.IsNullOrEmpty(result.Groups[1].Value) ? "=" : result.Groups[1].Value);
+                             blockItemValue.FilterPredicate.PredicateOperand =
+                                 (int)EnumHelper.GetEnumValueFromDescription<GemQualityType>(result.Groups[2].Value);
+                         }
+
+                         block.BlockItems.Add(blockItemValue);
+                         break;
+                    }
+
+
+
+
+
+
+
                     case "Class":
                     {
                         AddStringListItemToBlockItems<ClassBlockItem>(block, trimmedLine);
@@ -162,11 +189,6 @@ namespace Filtration.Parser.Services
                     case "BaseType":
                     {
                         AddStringListItemToBlockItems<BaseTypeBlockItem>(block, trimmedLine);
-                        break;
-                    }
-                    case "Prophecy":
-                    {
-                        AddStringListItemToBlockItems<ProphecyBlockItem>(block, trimmedLine);
                         break;
                     }
                     case "Corrupted":
@@ -179,16 +201,26 @@ namespace Filtration.Parser.Services
                         AddBooleanItemToBlockItems<MirroredBlockItem>(block, trimmedLine);
                         break;
                     }
+                    case "HasImplicitMod":
+                    {
+                        AddBooleanItemToBlockItems<HasImplicitModBlockItem>(block, trimmedLine);
+                        break;
+                    }
+                    case "HasCruciblePassiveTree":
+                    {
+                        AddBooleanItemToBlockItems<HasCruciblePassiveTreeBlockItem>(block, trimmedLine);
+                        break;
+                    }
                     case "Replica":
                     {
                         AddBooleanItemToBlockItems<ReplicaBlockItem>(block, trimmedLine);
                         break;
                     }
                     case "Scourged":
-                        {
-                            AddBooleanItemToBlockItems<ScourgedBlockItem>(block, trimmedLine);
-                            break;
-                        }
+                    {
+                        AddBooleanItemToBlockItems<ScourgedBlockItem>(block, trimmedLine);
+                        break;
+                    }
                     case "Identified":
                     {
                         AddBooleanItemToBlockItems<IdentifiedBlockItem>(block, trimmedLine);
@@ -199,9 +231,13 @@ namespace Filtration.Parser.Services
                         AddStringListItemToBlockItems<HasInfluenceBlockItem>(block, trimmedLine);
                         break;
                     }
-                    case "GemQualityType":
+
+
+
+
+                    case "EnchantmentPassiveNode":
                     {
-                        AddStringListItemToBlockItems<GemQualityTypeBlockItem>(block, trimmedLine);
+                        AddStringListItemToBlockItems<EnchantmentPassiveNodeBlockItem>(block, trimmedLine);
                         break;
                     }
                     case "SynthesisedItem":
@@ -219,11 +255,7 @@ namespace Filtration.Parser.Services
                         AddBooleanItemToBlockItems<AnyEnchantmentBlockItem>(block, trimmedLine);
                         break;
                     }
-                    case "Sockets":
-                    {
-                        AddNumericFilterPredicateItemToBlockItems<SocketsBlockItem>(block, trimmedLine);
-                        break;
-                    }
+
                     case "LinkedSockets":
                     {
                         AddNumericFilterPredicateItemToBlockItems<LinkedSocketsBlockItem>(block,trimmedLine);
@@ -239,42 +271,71 @@ namespace Filtration.Parser.Services
                         AddNumericFilterPredicateItemToBlockItems<HeightBlockItem>(block, trimmedLine);
                         break;
                     }
+                    case "Sockets":
+                    {
+                       AddStringListItemToBlockItems<SocketsBlockItem>(block, trimmedLine);
+                        break;
+                    }
                     case "SocketGroup":
                     {
                         AddStringListItemToBlockItems<SocketGroupBlockItem>(block, trimmedLine);
                         break;
                     }
                     case "BaseArmour":
-                        {
-                            AddNumericFilterPredicateItemToBlockItems<BaseArmourBlockItem>(block, trimmedLine);
-                            break;
-                        }
+                    {
+                        AddNumericFilterPredicateItemToBlockItems<BaseArmourBlockItem>(block, trimmedLine);
+                        break;
+                    }
                     case "BaseDefencePercentile":
-                        {
-                            AddNumericFilterPredicateItemToBlockItems<BaseDefencePercentileBlockItem>(block, trimmedLine);
-                            break;
-                        }
+                    {
+                        AddNumericFilterPredicateItemToBlockItems<BaseDefencePercentileBlockItem>(block, trimmedLine);
+                        break;
+                    }
                     case "BaseEnergyShield":
-                        {
-                            AddNumericFilterPredicateItemToBlockItems<BaseEnergyShieldBlockItem>(block, trimmedLine);
-                            break;
-                        }
+                    {
+                        AddNumericFilterPredicateItemToBlockItems<BaseEnergyShieldBlockItem>(block, trimmedLine);
+                        break;
+                    }
                     case "BaseEvasion":
-                        {
-                            AddNumericFilterPredicateItemToBlockItems<BaseEvasionBlockItem>(block, trimmedLine);
-                            break;
+                    {
+                        AddNumericFilterPredicateItemToBlockItems<BaseEvasionBlockItem>(block, trimmedLine);
+                        break;
                         }
                     case "BaseWard":
-                        {
-                            AddNumericFilterPredicateItemToBlockItems<BaseWardBlockItem>(block, trimmedLine);
-                            break;
-                        }
-
+                    {
+                        AddNumericFilterPredicateItemToBlockItems<BaseWardBlockItem>(block, trimmedLine);
+                        break;
+                    }
                     case "EnchantmentPassiveNum":
-                        {
-                            AddNumericFilterPredicateItemToBlockItems<EnchantmentPassiveNumBlockItem>(block, trimmedLine);
-                            break;
-                        }
+                    {
+                        AddNumericFilterPredicateItemToBlockItems<EnchantmentPassiveNumBlockItem>(block, trimmedLine);
+                        break;
+                    }
+                    case "Continue":
+                    {
+                        AddNilItemToBlockItems<ContinueBlockItem>(block, trimmedLine);
+                        break;
+                    }
+                    case "Minimal":
+                    {
+                        AddNilItemToBlockItems<MinimalBlockItem>(block, trimmedLine);
+                        break;
+                    }
+                    case "HasEaterOfWorldsImplicit":
+                    {
+                        AddNumericFilterPredicateItemToBlockItems<HasEaterOfWorldsImplicitBlockItem>(block, trimmedLine);
+                        break;
+                    }
+                    case "HasSearingExarchImplicit":
+                    {
+                         AddNumericFilterPredicateItemToBlockItems<HasSearingExarchImplicitBlockItem>(block, trimmedLine);
+                        break;
+                    }
+
+
+
+
+
 
 
                     case "SetTextColor":
@@ -375,6 +436,13 @@ namespace Filtration.Parser.Services
                         AddBooleanItemToBlockItems<AlternateQualityBlockItem>(block, trimmedLine);
                         break;
                     }
+
+                    case "TransfiguredGem":
+                    {
+                        AddBooleanItemToBlockItems<TransfiguredGemBlockItem>(block, trimmedLine);
+                        break;
+                    }
+
                     case "StackSize":
                     {
                         AddNumericFilterPredicateItemToBlockItems<StackSizeBlockItem>(block, trimmedLine);
@@ -567,6 +635,16 @@ namespace Filtration.Parser.Services
             return block;
         }
 
+        private void AddStringListItemToBlockItems<T>(string value)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void AddNumericFilterPredicateItemToBlockItems<T>(string value)
+        {
+            throw new NotImplementedException();
+        }
+
         private static void RemoveExistingBlockItemsOfType<T>(IItemFilterBlock block)
         {
             var existingBlockItemCount = block.BlockItems.Count(b => b.GetType() == typeof(T));
@@ -606,7 +684,7 @@ namespace Filtration.Parser.Services
 
         private static void SetNumericFilterPredicateFromString(NumericFilterPredicate predicate, string inputString)
         {
-            var result = Regex.Match(inputString, @"^\w+\s+([><=]{0,2})\s*(\d{0,3})$");
+            var result = Regex.Match(inputString, @"^\w+\s+([><=]{0,2})\s*(\d{0,4})$");
             if (result.Groups.Count != 3) return;
 
             predicate.PredicateOperator =

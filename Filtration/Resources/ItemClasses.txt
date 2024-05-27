@@ -1,71 +1,73 @@
-Abyss Jewel
-Active Skill Gems
+Abyss Jewels
+Active Gems
 Amulets
-Atlas Region Upgrade Item
-Axes
+Atlas Upgrade Items
 Belts
-Blueprint
+Blueprints
 Body Armours
 Boots
 Bows
+Breachstones
+Charms
 Claws
-Contract
+Contracts
+Corpses
 Currency
 Daggers
-Delve Socketable Currency
-Delve Stackable Socketable Currency
-Divination Card
+Divination Cards
+Embers of the Allflame
 Fishing Rods
-Flasks
 Gems
 Gloves
-HarvestInfrastructure
-Heist Brooch
-Heist Cloak
+Heist Brooches
+Heist Cloaks
 Heist Gear
-Heist Target
-Heist Tool
+Heist Targets
+Heist Tools
 Helmets
+Hideout Doodads
 Hybrid Flasks
-Incubator
-Incursion Item
-Jewel
-Labyrinth Item
-Labyrinth Map Item
-Labyrinth Trinket
-Large Relics
+Incubators
+Incursion Items
+Jewels
+Labyrinth Items
+Labyrinth Trinkets
 Leaguestones
 Life Flasks
-Logbook
-Maces
+Logbooks
 Mana Flasks
 Map Fragments
 Maps
-Medium Relics
-Metamorph Sample
+Memories
+Metamorph Samples
+Microtransactions
 Misc Map Items
+One Hand
 One Hand Axes
 One Hand Maces
 One Hand Swords
-Pantheon Soul
-Piece
+Pantheon Souls
+Pieces
 Quest Items
 Quivers
 Relics
 Rings
 Rune Daggers
+Sanctified Relics
+Sanctum Research
 Sceptres
+Sentinels
 Shields
-Small Relics
-Stackable Currency
 Staves
-Support Skill Gems
-Swords
+Support Gems
 Thrusting One Hand Swords
-Trinket
+Tincture
+Trinkets
+Two Hand
 Two Hand Axes
 Two Hand Maces
 Two Hand Swords
 Utility Flasks
+Vault Keys
 Wands
 Warstaves

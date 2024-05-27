@@ -17,7 +17,7 @@ namespace Filtration.ObjectModel.BlockItemTypes
 
         public override string PrefixText => "MapTier";
         public override int MaximumAllowed => 2;
-        public override string DisplayHeading => "Map Tier";
+        public override string DisplayHeading => "MapTier";
         public override string SummaryText => "Map Tier " + FilterPredicate;
         public override Color SummaryBackgroundColor => Colors.DarkSlateGray;
         public override Color SummaryTextColor => Colors.White;

@@ -17,7 +17,7 @@ namespace Filtration.ObjectModel.BlockItemTypes
 
         public override string PrefixText => "CorruptedMods";
         public override int MaximumAllowed => 2;
-        public override string DisplayHeading => "Corrupted Mods";
+        public override string DisplayHeading => "CorruptedMods";
         public override string SummaryText => "Corrupted Mods " + FilterPredicate;
         public override Color SummaryBackgroundColor => Colors.Firebrick;
         public override Color SummaryTextColor => Colors.White;

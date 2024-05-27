@@ -25,7 +25,7 @@ namespace Filtration.ObjectModel.BlockItemTypes
         public override string OutputText => PrefixText + " " + FilterPredicate.PredicateOperator
             .GetAttributeDescription() + " " + ((ItemRarity) FilterPredicate.PredicateOperand).GetAttributeDescription();
         public override int MaximumAllowed => 2;
-        public override string DisplayHeading => "Item Rarity";
+        public override string DisplayHeading => "ItemRarity";
         public override string SummaryText => "Rarity " + FilterPredicate.PredicateOperator.GetAttributeDescription() + " " +
                                               ((ItemRarity) FilterPredicate.PredicateOperand).GetAttributeDescription();
         public override Color SummaryBackgroundColor => Colors.LightCoral;

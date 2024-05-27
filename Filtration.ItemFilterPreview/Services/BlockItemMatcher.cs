@@ -72,8 +72,8 @@ namespace Filtration.ItemFilterPreview.Services
             if (blockItemType == typeof(RarityBlockItem))
                 return RarityBlockItemMatch((RarityBlockItem)blockItem, item);
 
-            if (blockItemType == typeof(SocketsBlockItem))
-                return SocketsBlockItemMatch((SocketsBlockItem)blockItem, item);
+
+
 
             if (blockItemType == typeof(WidthBlockItem))
                 return WidthBlockItemMatch((WidthBlockItem)blockItem, item);
@@ -123,16 +123,14 @@ namespace Filtration.ItemFilterPreview.Services
             return NumericFilterPredicateBlockItemMatch(qualityBlockItem, item.Quality);
         }
 
-
+        private static bool BaseDefencePercentileBlockItemMatch(BaseDefencePercentileBlockItem BaseDefencePercentileBlockItem, IItem item)
+        {
+            return NumericFilterPredicateBlockItemMatch(BaseDefencePercentileBlockItem, item.BaseDefencePercentile);
+        }
 
         private static bool BaseArmourBlockItemMatch(BaseArmourBlockItem BaseArmourBlockItem, IItem item)
         {
             return NumericFilterPredicateBlockItemMatch(BaseArmourBlockItem, item.BaseArmour);
-        }
-
-        private static bool BaseDefencePercentileBlockItemMatch(BaseDefencePercentileBlockItem BaseDefencePercentileBlockItem, IItem item)
-        {
-            return NumericFilterPredicateBlockItemMatch(BaseDefencePercentileBlockItem, item.BaseDefencePercentile);
         }
 
         private static bool BaseEnergyShieldBlockItemMatch(BaseEnergyShieldBlockItem BaseEnergyShieldBlockItem, IItem item)
@@ -161,10 +159,12 @@ namespace Filtration.ItemFilterPreview.Services
             return NumericFilterPredicateBlockItemMatch(qualityBlockItem, (int)item.ItemRarity);
         }
 
-        private static bool SocketsBlockItemMatch(SocketsBlockItem socketsBlockItem, IItem item)
+        private static bool GemQualityTypeBlockItemMatch(GemQualityTypeBlockItem qualityBlockItem, IItem item)
         {
-            return NumericFilterPredicateBlockItemMatch(socketsBlockItem, item.SocketCount);
+            return NumericFilterPredicateBlockItemMatch(qualityBlockItem, (int)item.GemQualityType);
         }
+
+
 
         private static bool WidthBlockItemMatch(WidthBlockItem widthBlockItem, IItem item)
         {

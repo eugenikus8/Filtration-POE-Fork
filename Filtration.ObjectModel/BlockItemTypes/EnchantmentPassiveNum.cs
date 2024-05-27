@@ -16,8 +16,8 @@ namespace Filtration.ObjectModel.BlockItemTypes
 
         public override string PrefixText => "EnchantmentPassiveNum";
         public override int MaximumAllowed => 2;
-        public override string DisplayHeading => "Cluster Jewels Passive Num";
-        public override string SummaryText => "Cluster Jewels Passive Num " + FilterPredicate;
+        public override string DisplayHeading => "ClusterJewelsPassive";
+        public override string SummaryText => "Cluster Jewels Passive " + FilterPredicate;
         public override Color SummaryBackgroundColor => Colors.DarkSlateBlue;
         public override Color SummaryTextColor => Colors.White;
         public override BlockItemOrdering SortOrder => BlockItemOrdering.EnchantmentPassiveNum;

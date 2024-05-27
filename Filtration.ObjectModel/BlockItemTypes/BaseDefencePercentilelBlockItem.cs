@@ -15,13 +15,13 @@ namespace Filtration.ObjectModel.BlockItemTypes
         }
 
         public override string PrefixText => "BaseDefencePercentile";
-        public override int MaximumAllowed => 2;
-        public override string DisplayHeading => "Base Defence Percentile";
+        public override int MaximumAllowed => 1;
+        public override string DisplayHeading => "BaseDefencePercentile";
         public override string SummaryText => "Base Defence Percentile " + FilterPredicate;
         public override Color SummaryBackgroundColor => Colors.Gray;
         public override Color SummaryTextColor => Colors.White;
         public override BlockItemOrdering SortOrder => BlockItemOrdering.BaseDefencePercentile;
         public override int Minimum => 0;
-        public override int Maximum => 5555;
+        public override int Maximum => 100;
     }
 }

@@ -212,48 +212,58 @@ namespace Filtration.ViewModels
 
         public IEnumerable<string> AutocompleteInfluenceTypes => _staticDataService.Influences;
 
-        public IEnumerable<string> AutocompleteGemQualityTypeTypes => _staticDataService.GemQualityType;
+        public IEnumerable<string> AutocompleteEnchantmentPassiveNode => _staticDataService.EnchantmentPassiveNode;
+
 
         public List<Type> BlockItemTypesAvailable => new List<Type>
         {
-            typeof (ItemLevelBlockItem),
-            typeof (DropLevelBlockItem),
-            typeof (AreaLevelBlockItem),
-            typeof (QualityBlockItem),
-            typeof (RarityBlockItem),
-            typeof (SocketsBlockItem),
-            typeof (LinkedSocketsBlockItem),
-            typeof (WidthBlockItem),
-            typeof (HeightBlockItem),
-            typeof (SocketGroupBlockItem),
-            typeof (ClassBlockItem),
-            typeof (BaseTypeBlockItem),
-            typeof (ProphecyBlockItem),
+            typeof (MinimalBlockItem),
             typeof (IdentifiedBlockItem),
             typeof (CorruptedBlockItem),
             typeof (CorruptedModsBlockItem),
+            typeof (ScourgedBlockItem),
             typeof (MirroredBlockItem),
             typeof (ReplicaBlockItem),
-            typeof (ScourgedBlockItem),
+            typeof (HasCruciblePassiveTreeBlockItem),
+            typeof (AreaLevelBlockItem),
+            typeof (DropLevelBlockItem),
+            typeof (ItemLevelBlockItem),
+            typeof (RarityBlockItem),
+            typeof (ClassBlockItem),
+            typeof (BaseTypeBlockItem),
+            typeof (QualityBlockItem),
+            typeof (StackSizeBlockItem),
+            typeof (LinkedSocketsBlockItem),
+            typeof (SocketsBlockItem),
+            typeof (SocketGroupBlockItem),
+            typeof (HeightBlockItem),
+            typeof (WidthBlockItem),
             typeof (SynthesisedItemBlockItem),
             typeof (FracturedItemBlockItem),
-            typeof (AnyEnchantmentBlockItem),
             typeof (MapTierBlockItem),
             typeof (BlightedMapBlockItem),
             typeof (UberBlightedMapBlockItem),
             typeof (GemLevelBlockItem),
             typeof (AlternateQualityBlockItem),
-            typeof (GemQualityTypeBlockItem),
-            typeof (StackSizeBlockItem),
-            typeof (HasExplicitModBlockItem),
+            typeof (TransfiguredGemBlockItem),
+
+            ///typeof (GemQualityTypeBlockItem),
+           
+            typeof (HasImplicitModBlockItem),
+            typeof (HasExplicitModBlockItem), 
+            typeof (AnyEnchantmentBlockItem),
             typeof (HasEnchantmentBlockItem),
+            typeof (HasEaterOfWorldsImplicitBlockItem),
+            typeof (HasSearingExarchImplicitBlockItem),
             typeof (HasInfluenceBlockItem),
             typeof (EnchantmentPassiveNumBlockItem),
+            typeof (EnchantmentPassiveNodeBlockItem),
             typeof (BaseDefencePercentileBlockItem),
             typeof (BaseArmourBlockItem),
-            typeof (BaseEnergyShieldBlockItem),
             typeof (BaseEvasionBlockItem),
+            typeof (BaseEnergyShieldBlockItem),
             typeof (BaseWardBlockItem),
+            typeof (ContinueBlockItem),
         };
 
         public List<Type> AudioVisualBlockItemTypesAvailable => new List<Type>

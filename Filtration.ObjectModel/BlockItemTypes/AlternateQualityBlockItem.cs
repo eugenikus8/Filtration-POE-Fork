@@ -15,7 +15,7 @@ namespace Filtration.ObjectModel.BlockItemTypes
         }
 
         public override string PrefixText => "AlternateQuality";
-        public override string DisplayHeading => "Alternate Quality";
+        public override string DisplayHeading => "AlternateQuality";
         public override Color SummaryBackgroundColor => Colors.GreenYellow;
         public override Color SummaryTextColor => Colors.Black;
         public override BlockItemOrdering SortOrder => BlockItemOrdering.AlternateQuality;

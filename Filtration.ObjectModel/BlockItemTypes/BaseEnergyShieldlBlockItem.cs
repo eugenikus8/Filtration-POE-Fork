@@ -15,13 +15,13 @@ namespace Filtration.ObjectModel.BlockItemTypes
         }
 
         public override string PrefixText => "BaseEnergyShield";
-        public override int MaximumAllowed => 2;
-        public override string DisplayHeading => "Base Energy Shield";
+        public override int MaximumAllowed => 1;
+        public override string DisplayHeading => "BaseEnergyShield";
         public override string SummaryText => "Base Energy Shield " + FilterPredicate;
         public override Color SummaryBackgroundColor => Colors.RoyalBlue;
         public override Color SummaryTextColor => Colors.White;
         public override BlockItemOrdering SortOrder => BlockItemOrdering.BaseEnergyShield;
         public override int Minimum => 0;
-        public override int Maximum => 5555;
+        public override int Maximum => 9999;
     }
 }

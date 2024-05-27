@@ -16,7 +16,7 @@ namespace Filtration.ObjectModel.BlockItemTypes
 
         public override string PrefixText => "AreaLevel";
         public override int MaximumAllowed => 2;
-        public override string DisplayHeading => "Area Level";
+        public override string DisplayHeading => "AreaLevel";
         public override string SummaryText => "Area Level " + FilterPredicate;
         public override Color SummaryBackgroundColor => Colors.IndianRed;
         public override Color SummaryTextColor => Colors.White;

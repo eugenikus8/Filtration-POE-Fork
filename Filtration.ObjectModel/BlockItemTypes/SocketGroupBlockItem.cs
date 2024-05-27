@@ -16,7 +16,7 @@ namespace Filtration.ObjectModel.BlockItemTypes
 
         public override string PrefixText => "SocketGroup";
         public override int MaximumAllowed => 1;
-        public override string DisplayHeading => "Socket Group";
+        public override string DisplayHeading => "SocketGroup";
         public override string SummaryText
         {
             get
