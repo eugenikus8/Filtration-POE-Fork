@@ -45,60 +45,6 @@ Alira's Amulet
 Alivia's Grace
 Alleyways Map
 Allflame
-Allflame Ember
-Allflame Ember of Abyss
-Allflame Ember of Arohongui
-Allflame Ember of Artillery Gemlings
-Allflame Ember of Beidat
-Allflame Ember of Berserking Gemlings
-Allflame Ember of Brawling Gemlings
-Allflame Ember of Chayula
-Allflame Ember of Corpsemage Gemlings
-Allflame Ember of Esh
-Allflame Ember of Frogs
-Allflame Ember of Frostmage Gemlings
-Allflame Ember of Ghorr
-Allflame Ember of Hinekora
-Allflame Ember of Kitava
-Allflame Ember of K'tash
-Allflame Ember of Meatsacks
-Allflame Ember of Ngamahu
-Allflame Ember of Ramako
-Allflame Ember of Rats
-Allflame Ember of Rongokurai
-Allflame Ember of Sulphite
-Allflame Ember of Tasalio
-Allflame Ember of Tawhoa
-Allflame Ember of The Black Scythe
-Allflame Ember of The Broken Circle
-Allflame Ember of The Crusader
-Allflame Ember of The Elder
-Allflame Ember of The Eternal Legion
-Allflame Ember of The Hunter
-Allflame Ember of The Karui Legion
-Allflame Ember of The Knights of the Sun
-Allflame Ember of The Maraketh Legion
-Allflame Ember of The Order of the Chalice
-Allflame Ember of The Redeemer
-Allflame Ember of The Shaper
-Allflame Ember of The Templar Legion
-Allflame Ember of The Vaal Legion
-Allflame Ember of The Warlord
-Allflame Ember of Tukohama
-Allflame Ember of Tul
-Allflame Ember of Untainted Apes
-Allflame Ember of Untainted Beasts
-Allflame Ember of Untainted Chimerals
-Allflame Ember of Untainted Devourers
-Allflame Ember of Untainted Maws
-Allflame Ember of Untainted Rhoas
-Allflame Ember of Untainted Spitters
-Allflame Ember of Uul-Netol
-Allflame Ember of Valako
-Allflame Ember of Wildwood Beasts
-Allflame Ember of Wildwood Cultists
-Allflame Ember of Wildwood Treants
-Allflame Ember of Xoph
 Alloyed Spiked Shield
 Alluring Bounty
 Alone in the Darkness
@@ -130,8 +76,6 @@ Anarchy's Price
 Ancestral Call Support
 Ancestral Club
 Ancestral Cry
-Ancestral Protector
-Ancestral Warchief
 Ancient City Map
 Ancient Gauntlets
 Ancient Greaves
@@ -206,6 +150,7 @@ Audacity
 Augmenting Power Core
 Auric Mace
 Auspicious Ambitions
+Autoexertion
 Aventail Helmet
 Avian Slippers
 Avian Twins Talisman
@@ -325,7 +270,6 @@ Blade Vortex
 Bladed Mace
 Bladefall
 Bladestorm
-Blasphemer
 Blasphemy Support
 Blast Rain
 Blastchain Mine Support
@@ -344,7 +288,7 @@ Blight
 Blight Scarab
 Blight Scarab of Blooming
 Blight Scarab of Bounty
-Blight Scarab of Oils
+Blight Scarab of the Blightheart
 Blighted Delirium Orb
 Blighted Incubator
 Blighted Scouting Report
@@ -355,7 +299,6 @@ Blink Arrow
 Blizzard Crown
 Block Chance Reduction Support
 Blood and Sand
-Blood Demon
 Blood Magic Support
 Blood Rage
 Blood Raiment
@@ -471,10 +414,10 @@ Cartographer's Chisel
 Cartographer's Delight
 Cartographer's Delirium Orb
 Cartographer's Incubator
-Cartography Scarab
-Cartography Scarab of Ascension
+Cartography Scarab of Escalation
+Cartography Scarab of Risk
 Cartography Scarab of Corruption
-Cartography Scarab of Duplication
+Cartography Scarab of the Multitude
 Cartography Scarab of Singularity
 Carved Wand
 Carving Knife
@@ -715,12 +658,9 @@ Cutthroat's Garb
 Cyclone
 Dagger Axe
 Damage on Full Life Support
-Dancing Sword
 Dark Dreams
 Dark Forest Map
-Dark Marionette
 Dark Pact
-Dark Reaper
 Dark Temptation
 Darker Half
 Darksteel Treads
@@ -754,7 +694,7 @@ Death
 Death Bow
 Deathly Designs
 Deathmark Support
-Debilitation Gauntlets
+Thwarting Gauntlets
 Decanter Spiritus
 Decay Support
 Decayed Voidstone
@@ -815,9 +755,9 @@ Discharge
 Discipline
 Disdain
 Disperser
-Divination Scarab
-Divination Scarab of Completion
-Divination Scarab of Curation
+Divination Scarab of The Cloister
+Divination Scarab of Pilfering
+Divination Scarab of Plenty
 Divine Beauty
 Divine Blessing Support
 Divine Ire
@@ -831,8 +771,8 @@ Diviner's Incubator
 Doedre's Madness
 Dominating Blow
 Domination Scarab
-Domination Scarab of Abnormality
-Domination Scarab of Teachings
+Domination Scarab of Apparitions
+Domination Scarab of Evolution
 Domination Scarab of Terrors
 Doryani's Epiphany
 Double Axe
@@ -855,7 +795,6 @@ Driftwood Sceptre
 Driftwood Spiked Shield
 Driftwood Wand
 Drox's Crest
-Druidic Alchemist
 Dual Strike
 Duality
 Dunes Map
@@ -867,7 +806,6 @@ Dying Anguish
 Dying Light
 Eagle Claw
 Earth Drinker
-Earthbreaker Support
 Earthquake
 Earthshatter
 Ebony Tower Shield
@@ -883,7 +821,6 @@ Elder Sword
 Elder's Orb
 Eldritch Chaos Orb
 Eldritch Exalted Orb
-Eldritch Eye
 Eldritch Incubator
 Eldritch Orb of Annulment
 Eldritch Perfection
@@ -1024,7 +961,6 @@ Fickle Spiritblade
 Field Lamellar
 Fields Map
 Fiend Dagger
-Fiery Cannibal
 Fine Delirium Orb
 Fine Incubator
 Fine Lockpick
@@ -1055,12 +991,6 @@ Flanged Arrowhead
 Flanged Drill
 Flanged Mace
 Flare Mace
-Flaring Allflame Ember
-Flaring Allflame Ember of Abyss
-Flaring Allflame Ember of Kalguurans
-Flaring Allflame Ember of Scientists
-Flaring Allflame Ember of The First Ones
-Flaring Allflame Ember of Wildwood Cultists
 Flashfire Blade
 Flashpowder Keg
 Flaying Knife
@@ -1082,8 +1012,6 @@ Forbidden Rite
 Forbidden Tome
 Foreboding Delirium Orb
 Foreboding Incubator
-Forest Tiger
-Forest Warrior
 Forge of the Phoenix Map
 Forgotten Reliquary Key
 Fork Support
@@ -1130,7 +1058,6 @@ Frost Wall
 Frostbite
 Frostblink
 Frostbolt
-Frozen Cannibal
 Frozen Legion
 Fugitive Boots
 Fulgurite Tincture
@@ -1147,7 +1074,7 @@ Further Invention
 Gale Crown
 Galvanic Field
 Gardens Map
-Gauche Gloves
+Tinker Gloves
 Gavel
 Gemcutter's Incubator
 Gemcutter's Mercy
@@ -1251,14 +1178,12 @@ Gripped Gloves
 Grotto Map
 Ground Slam
 Grove Bow
-Gruelling Gauntlets
-Guardian Turtle
+Guarding Gauntlets
 Guardian's Blessing Support
 Guardian's Challenge
 Gut Ripper
 Gutting Knife
 Haemocombustion Scroll
-Half-remembered Goliath
 Haliotis Glyph
 Hallowed Hybrid Flask
 Hallowed Life Flask
@@ -1267,7 +1192,7 @@ Hammered Buckler
 Harbinger Bow
 Harbinger Map
 Harbinger Scarab
-Harbinger Scarab of Discernment
+Harbinger Scarab of Obelisks
 Harbinger Scarab of Regency
 Harbinger Scarab of Warhoards
 Harbinger's Orb
@@ -1352,14 +1277,12 @@ Horticrafting Station
 House of Mirrors
 Hubris
 Hubris Circlet
-Hulking Miscreation
 Humility
 Hunter Hood
 Hunter's Exalted Orb
 Hunter's Resolve
 Hunter's Reward
 Hussar Brigandine
-Hydra
 Hydrascale Boots
 Hydrascale Gauntlets
 Hydrosphere
@@ -1385,38 +1308,6 @@ Imp Dagger
 Impact Force Propagator
 Impale Support
 Impending Doom Support
-Imperfect Blasphemer
-Imperfect Blood Demon
-Imperfect Dancing Sword
-Imperfect Dark Marionette
-Imperfect Dark Reaper
-Imperfect Druidic Alchemist
-Imperfect Eldritch Eye
-Imperfect Fiery Cannibal
-Imperfect Forest Tiger
-Imperfect Forest Warrior
-Imperfect Frozen Cannibal
-Imperfect Guardian Turtle
-Imperfect Half-remembered Goliath
-Imperfect Hulking Miscreation
-Imperfect Hydra
-Imperfect Judgemental Spirit
-Imperfect Meatsack
-Imperfect Memories
-Imperfect Naval Officer
-Imperfect Needle Horror
-Imperfect Pain Artist
-Imperfect Primal Demiurge
-Imperfect Primal Thunderbird
-Imperfect Runic Skeleton
-Imperfect Sanguimancer Demon
-Imperfect Sawblade Horror
-Imperfect Serpent Warrior
-Imperfect Shadow Construct
-Imperfect Slashing Horror
-Imperfect Spider Matriarch
-Imperfect Spirit of Fortune
-Imperfect Warlord
 Imperial Bow
 Imperial Buckler
 Imperial Claw
@@ -1504,7 +1395,6 @@ Journey Tattoo of the Body
 Journey Tattoo of the Mind
 Journey Tattoo of the Soul
 Judgement Staff
-Judgemental Spirit
 Judging Voices
 Jungle Valley Map
 Justified Ambition
@@ -1663,7 +1553,6 @@ Maze Map
 Maze of the Minotaur Map
 Meat Shield Support
 Meatgrinder
-Meatsack
 Mechalarm Belt
 Mechanical Belt
 Medicine Chest
@@ -1733,14 +1622,12 @@ Muttering Essence of Sorrow
 Muttering Essence of Torment
 Muttering Essence of Woe
 Mysterious Incubator
-Mysterious Scarab
+Scarab of Divinity
 Nailed Fist
-Naval Officer
 Necromancer Circlet
 Necromancer Silks
 Necromancy Net
 Necropolis Map
-Needle Horror
 Nexus Gloves
 Nightblade Support
 Nightmare Bascinet
@@ -1765,7 +1652,6 @@ Obsidian Sharpening Stone
 Occultist's Vestment
 Ochre Sceptre
 Offering to the Goddess
-Oil Extractor
 Oiled Coat
 Oiled Vest
 Omen of Acceleration
@@ -1824,7 +1710,6 @@ Overgrown Shrine Map
 Padded Jacket
 Padded Vest
 Pagan Wand
-Pain Artist
 Painted Buckler
 Painted Tower Shield
 Palace Map
@@ -1842,38 +1727,7 @@ Peninsula Map
 Penitent Mask
 Penumbra Ring
 Perandus Coin
-Perfect Blasphemer
-Perfect Blood Demon
-Perfect Dancing Sword
-Perfect Dark Marionette
-Perfect Dark Reaper
-Perfect Druidic Alchemist
-Perfect Eldritch Eye
-Perfect Fiery Cannibal
-Perfect Forest Tiger
-Perfect Forest Warrior
-Perfect Fossil
-Perfect Frozen Cannibal
-Perfect Guardian Turtle
-Perfect Half-remembered Goliath
-Perfect Hulking Miscreation
-Perfect Hydra
-Perfect Judgemental Spirit
-Perfect Meatsack
-Perfect Naval Officer
-Perfect Needle Horror
-Perfect Pain Artist
-Perfect Primal Demiurge
-Perfect Primal Thunderbird
-Perfect Runic Skeleton
-Perfect Sanguimancer Demon
-Perfect Sawblade Horror
-Perfect Serpent Warrior
-Perfect Shadow Construct
-Perfect Slashing Horror
-Perfect Spider Matriarch
-Perfect Spirit of Fortune
-Perfect Warlord
+Opulent Fossil
 Perfection
 Perforate
 Pernach
@@ -1949,7 +1803,6 @@ Primal Crushclaw Bulb
 Primal Crystallised Lifeforce
 Primal Cystcaller Bulb
 Primal Delirium Orb
-Primal Demiurge
 Primal Dustcrab Seed
 Primal Dustspitter Grain
 Primal Feasting Horror Grain
@@ -1962,7 +1815,6 @@ Primal Rhex Seed
 Primal Rhoa Grain
 Primal Scrabbler Seed
 Primal Skull Talisman
-Primal Thunderbird
 Primal Viper Seed
 Prime Alchemical Resonator
 Prime Chaotic Resonator
@@ -2034,7 +1886,7 @@ Rebirth and Renewal
 Rebuking Blade
 Reciprocation Staff
 Reckless Ambition
-Reckoning
+Swordstorm
 Recurve Bow
 Redeemer's Exalted Orb
 Redwood Spiked Shield
@@ -2053,9 +1905,9 @@ Reinforced Steel Net
 Reinforced Tower Shield
 Rejuvenation Totem
 Relic Chambers Map
-Reliquary Scarab
-Reliquary Scarab of Overlords
-Reliquary Scarab of Vision
+Titanic Scarab
+Titanic Scarab of Treasures
+Titanic Scarab of Legend
 Remembrance
 Remnant of Corruption
 Residence Map
@@ -2067,9 +1919,9 @@ Ring
 Ringmail Boots
 Ringmail Coat
 Ringmail Gloves
-Riposte
+Glacial Shield Swipe
 Ritual Scarab of Abundance
-Ritual Scarab of Recognition
+Ritual Scarab of Wisps
 Ritual Scarab of Selectiveness
 Ritual Sceptre
 Ritual Splinter
@@ -2106,7 +1958,6 @@ Runic Greaves
 Runic Hatchet
 Runic Helm
 Runic Sabatons
-Runic Skeleton
 Runic Sollerets
 Rusted Coif
 Rusted Hatchet
@@ -2150,13 +2001,11 @@ Sanctum Cathedral Research
 Sanctum Necropolis Research
 Sanctum Vaults Research
 Sand of Eternity
-Sanguimancer Demon
 Sapphire Flask
 Sapphire Ring
 Satin Gloves
 Satin Slippers
 Savant's Robe
-Sawblade Horror
 Scale Doublet
 Scale Vest
 Scarab
@@ -2212,7 +2061,6 @@ Sekhema Feather
 Sentinel Jacket
 Sepia Oil
 Sepulchre Map
-Serpent Warrior
 Serpentine Staff
 Serpentscale Boots
 Serpentscale Gauntlets
@@ -2223,7 +2071,6 @@ Seven Years Bad Luck
 Shabby Jerkin
 Shackled Boots
 Shadow Axe
-Shadow Construct
 Shadow Fangs
 Shadow Sceptre
 Shadowed Ring
@@ -2304,7 +2151,7 @@ Simulacrum Splinter
 Singular Delirium Orb
 Singular Incubator
 Singular Scouting Report
-Sinistral Gloves
+Trapsetter Gloves
 Sinner Tricorne
 Siphoning Trap
 Skean
@@ -2312,7 +2159,6 @@ Skeleton Keyring
 Skinning Knife
 Skittering Delirium Orb
 Skittering Incubator
-Slashing Horror
 Slaughter Knife
 Sledgehammer
 Sleek Coat
@@ -2344,7 +2190,7 @@ Sorrow Mask
 Soul Link
 Soul Quenched
 Soulrend
-Southswing Gloves
+Apprentice Gloves
 Sovereign Spiked Shield
 Spark
 Sparkling Claw
@@ -2361,7 +2207,6 @@ Spellblade Support
 Spellslinger
 Spider Forest Map
 Spider Lair Map
-Spider Matriarch
 Spidersilk Robe
 Spiked Bundle
 Spiked Club
@@ -2374,7 +2219,6 @@ Spiny Maul
 Spiny Round Shield
 Spiraled Foil
 Spiraled Wand
-Spirit of Fortune
 Spirit Offering
 Splendid Round Shield
 Splinter
@@ -2548,7 +2392,7 @@ Tattoo of the Valako Shaman
 Tattoo of the Valako Shieldbearer
 Tattoo of the Valako Stormrider
 Tattoo of the Valako Warrior
-Taxing Gauntlets
+Preserving Gauntlets
 Teak Round Shield
 Teal Oil
 Tectonic Slam
@@ -2953,7 +2797,6 @@ Ursine Pelt
 Uul-Netol's Breachstone
 Uul-Netol's Flawless Breachstone
 Vaal Absolution
-Vaal Ancestral Warchief
 Vaal Animate Weapon
 Vaal Arc
 Vaal Arctic Armour
@@ -3036,7 +2879,7 @@ Veiled Orb
 Veiled Scarab
 Velvet Gloves
 Velvet Slippers
-Vengeance
+Crushing Fist
 Venom Gyre
 Verdant Oil
 Veritania's Crest
@@ -3125,7 +2968,6 @@ War Buckler
 War Hammer
 War Plate
 War Sword
-Warlord
 Warlord's Exalted Orb
 Warlord's Mark
 Waste Pool Map
@@ -3218,3 +3060,210 @@ Zealot Gloves
 Zealot Helmet
 Zealotry
 Zodiac Leather
+
+Eviscerate
+Divine Retribution
+Vengeful Cry
+
+Overexertion Support
+Expert Retaliation Support
+Rupture Support
+
+Father's Love
+Avian Pursuit
+Temperance
+Lonely Warrior
+Toxic Tidings
+
+Nameless Ring
+
+General's Helmet
+Conqueror's Helmet
+Giantslayer Helmet
+Dire Pelt
+Grizzly Pelt
+Majestic Pelt
+Moonlit Circlet
+Sunfire Circlet
+Lich's Circlet
+Knight Helm
+Conquest Helmet
+Haunted Bascinet
+Faithful Helmet
+Paladin Crown
+Divine Crown
+Jester Mask
+Ancient Mask
+Torturer's Mask
+
+Titan Plate
+Legion Plate
+Royal Plate
+Supreme Leather
+Astral Leather
+Syndicate's Garb
+Arcane Vestment
+Nightweave Robe
+Twilight Regalia
+Full Wyvernscale
+Marshall's Brigandine
+Conquest Lamellar
+Grand Ringmail
+Paladin's Hauberk
+Sacred Chainmail
+Sanguine Raiment
+Torturer Garb
+Necrotic Armour
+
+Precursor Greaves
+Leviathan Greaves
+Harpyskin Boots
+Velour Boots
+Sage Slippers
+Warlock Boots
+Chimerascale Boots
+Wyvernscale Boots
+Martyr Boots
+Paladin Boots
+Infiltrator Boots
+Phantom Boots
+
+Precursor Gauntlets
+Leviathan Gauntlets
+Harpyskin Gloves
+Velour Gloves
+Sage Gloves
+Warlock Gloves
+Chimerascale Gauntlets
+Wyvernscale Gauntlets
+Martyr Gloves
+Paladin Gloves
+Infiltrator Mitts
+Phantom Mitts
+
+Gold
+
+An Audience With The King
+
+Prismatic Oil
+Reflecting Mist
+Maven's Chisel of Procurement
+Maven's Chisel of Proliferation
+Maven's Chisel of Divination
+Maven's Chisel of Scarabs
+Maven's Chisel of Avarice
+Life Rune
+Sun Rune
+Bound Rune
+War Rune
+River Rune
+Bounty Rune
+Journey Rune
+Mountain Rune
+Time Rune
+Power Rune
+
+Prismatic Tincture
+Rosethorn Tincture
+Ironwood Tincture
+Ashbark Tincture
+Borealwood Tincture
+Fulgurite Tincture
+Poisonberry Tincture
+Blood Sap Tincture
+Oakbranch Tincture
+Sporebloom Tincture
+
+Imperfect Hydra
+Hydra
+Perfect Hydra
+Imperfect Frozen Cannibal
+Frozen Cannibal
+Perfect Frozen Cannibal
+Imperfect Fiery Cannibal
+Fiery Cannibal
+Perfect Fiery Cannibal
+Imperfect Dark Marionette
+Dark Marionette
+Perfect Dark Marionette
+Imperfect Naval Officer
+Naval Officer
+Perfect Naval Officer
+Imperfect Dancing Sword
+Dancing Sword
+Perfect Dancing Sword
+Imperfect Needle Horror
+Needle Horror
+Perfect Needle Horror
+Imperfect Serpent Warrior
+Serpent Warrior
+Perfect Serpent Warrior
+Imperfect Pain Artist
+Pain Artist
+Perfect Pain Artist
+Imperfect Sawblade Horror
+Sawblade Horror
+Perfect Sawblade Horror
+Imperfect Blood Demon
+Blood Demon
+Perfect Blood Demon
+Imperfect Slashing Horror
+Slashing Horror
+Perfect Slashing Horror
+Imperfect Druidic Alchemist
+Druidic Alchemist
+Perfect Druidic Alchemist
+Imperfect Blasphemer
+Blasphemer
+Perfect Blasphemer
+Imperfect Judgemental Spirit
+Judgemental Spirit
+Perfect Judgemental Spirit
+Imperfect Primal Thunderbird
+Primal Thunderbird
+Perfect Primal Thunderbird
+Imperfect Spirit of Fortune
+Spirit of Fortune
+Perfect Spirit of Fortune
+Imperfect Primal Demiurge
+Primal Demiurge
+Perfect Primal Demiurge
+Imperfect Runic Skeleton
+Runic Skeleton
+Perfect Runic Skeleton
+Imperfect Warlord
+Warlord
+Perfect Warlord
+Imperfect Dark Reaper
+Dark Reaper
+Perfect Dark Reaper
+Imperfect Hulking Miscreation
+Hulking Miscreation
+Perfect Hulking Miscreation
+Imperfect Sanguimancer Demon
+Sanguimancer Demon
+Perfect Sanguimancer Demon
+Imperfect Spider Matriarch
+Spider Matriarch
+Perfect Spider Matriarch
+Imperfect Half-remembered Goliath
+Half-remembered Goliath
+Perfect Half-remembered Goliath
+Imperfect Meatsack
+Meatsack
+Perfect Meatsack
+Imperfect Eldritch Eye
+Eldritch Eye
+Perfect Eldritch Eye
+Imperfect Forest Tiger
+Forest Tiger
+Perfect Forest Tiger
+Imperfect Guardian Turtle
+Guardian Turtle
+Perfect Guardian Turtle
+Imperfect Shadow Construct
+Shadow Construct
+Perfect Shadow Construct
+Imperfect Forest Warrior
+Forest Warrior
+Perfect Forest Warrior
