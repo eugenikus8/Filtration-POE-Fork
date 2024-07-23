@@ -1,6 +1,5 @@
 # Filtration
-
-Filtration is an editor for Path of Exile item filter scripts.
+Filtration by [Ben Wallis](https://github.com/ben-wallis/Filtration) is an editor for Path of Exile item filter scripts.
 
 ## Current Release (Released 2019-09-11)
 <b>Installer</b><br>
