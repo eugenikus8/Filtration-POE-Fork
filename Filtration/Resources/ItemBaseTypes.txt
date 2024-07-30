@@ -1323,7 +1323,6 @@ Incinerate
 Increased Area of Effect Support
 Increased Critical Damage Support
 Increased Critical Strikes Support
-Increased Duration Support
 Incursion Scarab
 Incursion Scarab of Champions
 Incursion Scarab of Invasion
@@ -1597,6 +1596,7 @@ Moon Orb
 Moon Staff
 Moon Temple Map
 Moonstone Ring
+More Duration Support
 More is Never Enough
 Morning Star
 Mortal Grief
