@@ -974,3 +974,224 @@ of the Wrestler
 of the Yeti
 of the Zealous
 of the Zephyr
+
+of Chasms
+of Cascading Fortunes
+of Harvest Beasts
+of Demonic Onslaught
+of Grasping Hands
+of the Pantheon
+of Crystal Prisons
+of Survivor's Guilt
+of Phaaryl
+of the Sacred Grove
+of Reverse Incursion
+of Tormented Souls
+
+Arctic
+Arming
+Armoured
+Avalanching
+Bandit's
+Battlemage's
+Beating
+Blunt
+Brutal
+Carved
+Cerebral
+Chaotic
+Charging
+Chilling
+Cleaving
+Cryomantic
+Decrepifying
+Deflecting
+Dissipating
+Electromantic
+Energetic
+Enlightened
+Evasive
+Fencing
+Fevered
+Fierce
+Flanking
+Halting
+Harming
+Harmonic
+Hungering
+Infernal
+Jinxing
+Judging
+Leadership
+Lethal
+Master's
+Parrying
+Piercing
+Prolonging
+Puncturing
+Pyromantic
+Resonant
+Ripping
+Rupturing
+Sabotage
+Savage
+Serene
+Shaman's
+Sharpened
+Shielding
+Shimmering
+Sinister
+Slicing
+Soldier's
+Sundering
+Surging
+Technical
+Thirsting
+Thundering
+Thwarting
+Trapping
+Vivid
+Volleying
+Warding
+Warrior's
+Wright's
+
+of Adaption
+of Annihilation
+of Archery
+of Athletics
+of Atrophy
+of Berserking
+of Blasting
+of Bleeding
+of Combat
+of Cunning
+of Deadliness
+of Demolishing
+of Dexterity
+of Enchanting
+of Fending
+of Focus
+of Gelidity
+of Hexwarding
+of Impaling
+of Infusion
+of Intelligence
+of Mysticism
+of Neutralisation
+of Order
+of Poisoning
+of Potency
+of Recovery
+of Resilience
+of Resistance
+of Shelter
+of Soaring
+of Spirit
+of Stemming
+of Strength
+of the Apocalypse
+of the Beast
+of the Dragon
+of the Elements
+of the Flameruler
+of the Hearth
+of the Kraken
+of the Snowbreather
+of the Stormdweller
+of Training
+of Weight
+of Wounding
+of Zeal
+of Zealousness
+
+Acuminate
+Beautiful
+Beclouded
+Breathtaking
+Captivating
+Clouded
+Darkened
+Degenerative
+Deleterious
+Energising
+Expediting
+Exuberant
+Facilitating
+Fuelling
+Inspirational
+Lancing
+Lively
+Malignant
+Motivating
+Resonating
+Skewering
+Spirited
+Spurring
+Tainted
+Vile
+Vivacious
+Youthful
+
+of Abuse
+of Authority
+of Balance
+of Banishing
+of Blinding
+of Chilling
+of Clouding
+of Collision
+of Command
+of Confidence
+of Daunting
+of Delaying
+of Dishonour
+of Distraction
+of Enervation
+of Escape
+of Fireproofing
+of Force
+of Guarding
+of Harm
+of Heating
+of Heft
+of Hindering
+of Immunity
+of Instinct
+of Instruction
+of Insulating
+of Languishing
+of Longevity
+of Malevolence
+of Malice
+of Maneuvering
+of Mangling
+of Marshalling
+of Momentum
+of Nonflammability
+of Opportunity
+of Phasing
+of Poise
+of Praxis
+of Preparation
+of Readiness
+of Retaliation
+of Righteousness
+of Sin
+of Stifling
+of Suggestion
+of Taunting
+of the Assassin
+of the Deadeye
+of the Guardian
+of the Inferno
+of the Inquisitor
+of the Raider
+of the Sanctum
+of the Slayer
+of the Tourniquet
+of Tolerance
+of Unholy Might
+of Vampirism
+of Vivaciousness
+of Warming
