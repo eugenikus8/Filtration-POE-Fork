@@ -1908,6 +1908,7 @@ Relic Chambers Map
 Titanic Scarab
 Titanic Scarab of Treasures
 Titanic Scarab of Legend
+Titanium Spirit Shield
 Remembrance
 Remnant of Corruption
 Residence Map
@@ -3061,12 +3062,12 @@ Zealot Helmet
 Zealotry
 Zodiac Leather
 
-Eviscerate
 Divine Retribution
+Eviscerate
 Vengeful Cry
 
-Overexertion Support
 Expert Retaliation Support
+Overexertion Support
 Rupture Support
 
 Father's Love
@@ -3145,125 +3146,128 @@ Gold
 
 An Audience With The King
 
-Prismatic Oil
-Reflecting Mist
-Maven's Chisel of Procurement
-Maven's Chisel of Proliferation
-Maven's Chisel of Divination
-Maven's Chisel of Scarabs
-Maven's Chisel of Avarice
-Life Rune
-Sun Rune
 Bound Rune
-War Rune
-River Rune
 Bounty Rune
 Journey Rune
+Life Rune
 Mountain Rune
-Time Rune
 Power Rune
+Prismatic Oil
+Reflecting Mist
+River Rune
+Sun Rune
+Time Rune
+War Rune
 
-Prismatic Tincture
-Rosethorn Tincture
-Ironwood Tincture
+Maven's Chisel of Avarice
+Maven's Chisel of Divination
+Maven's Chisel of Procurement
+Maven's Chisel of Proliferation
+Maven's Chisel of Scarabs
+
 Ashbark Tincture
+Blood Sap Tincture
 Borealwood Tincture
 Fulgurite Tincture
-Poisonberry Tincture
-Blood Sap Tincture
+Ironwood Tincture
 Oakbranch Tincture
+Poisonberry Tincture
+Prismatic Tincture
+Rosethorn Tincture
 Sporebloom Tincture
 
-Imperfect Hydra
-Hydra
-Perfect Hydra
-Imperfect Frozen Cannibal
-Frozen Cannibal
-Perfect Frozen Cannibal
-Imperfect Fiery Cannibal
-Fiery Cannibal
-Perfect Fiery Cannibal
-Imperfect Dark Marionette
-Dark Marionette
-Perfect Dark Marionette
-Imperfect Naval Officer
-Naval Officer
-Perfect Naval Officer
-Imperfect Dancing Sword
-Dancing Sword
-Perfect Dancing Sword
-Imperfect Needle Horror
-Needle Horror
-Perfect Needle Horror
-Imperfect Serpent Warrior
-Serpent Warrior
-Perfect Serpent Warrior
-Imperfect Pain Artist
-Pain Artist
-Perfect Pain Artist
-Imperfect Sawblade Horror
-Sawblade Horror
-Perfect Sawblade Horror
-Imperfect Blood Demon
-Blood Demon
-Perfect Blood Demon
-Imperfect Slashing Horror
-Slashing Horror
-Perfect Slashing Horror
-Imperfect Druidic Alchemist
-Druidic Alchemist
-Perfect Druidic Alchemist
-Imperfect Blasphemer
 Blasphemer
-Perfect Blasphemer
-Imperfect Judgemental Spirit
-Judgemental Spirit
-Perfect Judgemental Spirit
-Imperfect Primal Thunderbird
-Primal Thunderbird
-Perfect Primal Thunderbird
-Imperfect Spirit of Fortune
-Spirit of Fortune
-Perfect Spirit of Fortune
-Imperfect Primal Demiurge
-Primal Demiurge
-Perfect Primal Demiurge
-Imperfect Runic Skeleton
-Runic Skeleton
-Perfect Runic Skeleton
-Imperfect Warlord
-Warlord
-Perfect Warlord
-Imperfect Dark Reaper
+Blood Demon
+Dancing Sword
+Dark Marionette
 Dark Reaper
-Perfect Dark Reaper
-Imperfect Hulking Miscreation
-Hulking Miscreation
-Perfect Hulking Miscreation
-Imperfect Sanguimancer Demon
-Sanguimancer Demon
-Perfect Sanguimancer Demon
-Imperfect Spider Matriarch
-Spider Matriarch
-Perfect Spider Matriarch
-Imperfect Half-remembered Goliath
-Half-remembered Goliath
-Perfect Half-remembered Goliath
-Imperfect Meatsack
-Meatsack
-Perfect Meatsack
-Imperfect Eldritch Eye
+Druidic Alchemist
 Eldritch Eye
-Perfect Eldritch Eye
-Imperfect Forest Tiger
+Fiery Cannibal
 Forest Tiger
-Perfect Forest Tiger
-Imperfect Guardian Turtle
-Guardian Turtle
-Perfect Guardian Turtle
-Imperfect Shadow Construct
-Shadow Construct
-Perfect Shadow Construct
-Imperfect Forest Warrior
 Forest Warrior
+Frozen Cannibal
+Guardian Turtle
+Half-remembered Goliath
+Hulking Miscreation
+Hydra
+Judgemental Spirit
+Meatsack
+Naval Officer
+Needle Horror
+Pain Artist
+Primal Demiurge
+Primal Thunderbird
+Runic Skeleton
+Sanguimancer Demon
+Sawblade Horror
+Serpent Warrior
+Shadow Construct
+Slashing Horror
+Spider Matriarch
+Spirit of Fortune
+Warlord
+
+Imperfect Blasphemer
+Imperfect Blood Demon
+Imperfect Dancing Sword
+Imperfect Dark Marionette
+Imperfect Dark Reaper
+Imperfect Druidic Alchemist
+Imperfect Eldritch Eye
+Imperfect Fiery Cannibal
+Imperfect Forest Tiger
+Imperfect Forest Warrior
+Imperfect Frozen Cannibal
+Imperfect Guardian Turtle
+Imperfect Half-remembered Goliath
+Imperfect Hulking Miscreation
+Imperfect Hydra
+Imperfect Judgemental Spirit
+Imperfect Meatsack
+Imperfect Naval Officer
+Imperfect Needle Horror
+Imperfect Pain Artist
+Imperfect Primal Demiurge
+Imperfect Primal Thunderbird
+Imperfect Runic Skeleton
+Imperfect Sanguimancer Demon
+Imperfect Sawblade Horror
+Imperfect Serpent Warrior
+Imperfect Shadow Construct
+Imperfect Slashing Horror
+Imperfect Spider Matriarch
+Imperfect Spirit of Fortune
+Imperfect Warlord
+
+Perfect Blasphemer
+Perfect Blood Demon
+Perfect Dancing Sword
+Perfect Dark Marionette
+Perfect Dark Reaper
+Perfect Druidic Alchemist
+Perfect Eldritch Eye
+Perfect Fiery Cannibal
+Perfect Forest Tiger
 Perfect Forest Warrior
+Perfect Frozen Cannibal
+Perfect Guardian Turtle
+Perfect Half-remembered Goliath
+Perfect Hulking Miscreation
+Perfect Hydra
+Perfect Judgemental Spirit
+Perfect Meatsack
+Perfect Naval Officer
+Perfect Needle Horror
+Perfect Pain Artist
+Perfect Primal Demiurge
+Perfect Primal Thunderbird
+Perfect Runic Skeleton
+Perfect Sanguimancer Demon
+Perfect Sawblade Horror
+Perfect Serpent Warrior
+Perfect Shadow Construct
+Perfect Slashing Horror
+Perfect Spider Matriarch
+Perfect Spirit of Fortune
+Perfect Warlord
