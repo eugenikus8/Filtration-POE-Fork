@@ -16,7 +16,7 @@ namespace Filtration.ObjectModel.BlockItemTypes
 
         public override string PrefixText => "Identified";
         public override string DisplayHeading => "Identified";
-        public override Color SummaryBackgroundColor => Colors.DimGray;
+        public override Color SummaryBackgroundColor => Colors.Black;
         public override Color SummaryTextColor => Colors.White;
         public override BlockItemOrdering SortOrder => BlockItemOrdering.Identified;
     }
