@@ -17,7 +17,7 @@ namespace Filtration.ObjectModel.BlockItemTypes
         public override string PrefixText => "HasImplicitMod";
         public override string DisplayHeading => "ImplicitMod";
         public override Color SummaryBackgroundColor => Colors.DarkGray;
-        public override Color SummaryTextColor => Colors.White;
+        public override Color SummaryTextColor => Colors.Black;
         public override BlockItemOrdering SortOrder => BlockItemOrdering.HasImplicitMod;
     }
 }
