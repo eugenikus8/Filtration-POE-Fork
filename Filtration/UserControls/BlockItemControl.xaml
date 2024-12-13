@@ -67,22 +67,25 @@
                         </StackPanel>
                     </DataTemplate>
 
-					
-					<!-- GemQualityType Template -->
-					<DataTemplate DataType="{x:Type blockItemTypes:GemQualityTypeBlockItem}">
-						<StackPanel Orientation="Horizontal" Margin="1,1,1,1">
-							<ComboBox ItemsSource="{Binding Source={extensions:Enumeration {x:Type enums:FilterPredicateOperator}}}"
+
+
+                    <!-- Not Used (hide) -->
+                    <!-- GemQualityType Template -->
+                    <DataTemplate DataType="{x:Type blockItemTypes:GemQualityTypeBlockItem}">
+                        <StackPanel Orientation="Horizontal" Margin="1,1,1,1">
+                            <ComboBox ItemsSource="{Binding Source={extensions:Enumeration {x:Type enums:FilterPredicateOperator}}}"
                                                               DisplayMemberPath="Description"
                                                               SelectedValue="{Binding FilterPredicate.PredicateOperator}"
                                                               SelectedValuePath="Value" Width="50" Margin="0,0,4,0"  />
-							<ComboBox ItemsSource="{Binding Source={extensions:Enumeration {x:Type enums:GemQualityType}}}"
+                            <ComboBox ItemsSource="{Binding Source={extensions:Enumeration {x:Type enums:GemQualityType}}}"
                                                               DisplayMemberPath="Description"
                                                               SelectedValue="{Binding FilterPredicate.PredicateOperand, Converter={StaticResource IntToGemQualityTypeConverter}}"
                                                               SelectedValuePath="Value" />
-						</StackPanel>
-					</DataTemplate>
-					
-					
+                        </StackPanel>
+                    </DataTemplate>
+
+
+
                     <!-- Class Template -->
                     <DataTemplate DataType="{x:Type blockItemTypes:ClassBlockItem}">
                         <userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" AutoCompleteItemsSource="{Binding ElementName=TopLevelGrid, Path=DataContext.AutoCompleteItemClasses}" />
@@ -103,32 +106,27 @@
                         <userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" AutoCompleteItemsSource="{Binding ElementName=TopLevelGrid, Path=DataContext.AutocompleteEnchantments}" />
                     </DataTemplate>
 
+                    <!-- Influence Template -->
                     <DataTemplate DataType="{x:Type blockItemTypes:HasInfluenceBlockItem}">
                         <userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" AutoCompleteItemsSource="{Binding ElementName=TopLevelGrid, Path=DataContext.AutocompleteInfluenceTypes}" />
                     </DataTemplate>
 
-					
-					
-					
-					<DataTemplate DataType="{x:Type blockItemTypes:EnchantmentPassiveNodeBlockItem}">
-						<userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" AutoCompleteItemsSource="{Binding ElementName=TopLevelGrid, Path=DataContext.AutocompleteEnchantmentPassiveNode}" />
-					</DataTemplate>
-					
-					
-
+                    <!-- Cluster Jewel Node Template -->
+                    <DataTemplate DataType="{x:Type blockItemTypes:EnchantmentPassiveNodeBlockItem}">
+                        <userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" AutoCompleteItemsSource="{Binding ElementName=TopLevelGrid, Path=DataContext.AutocompleteEnchantmentPassiveNode}" />
+                    </DataTemplate>
+          
                     <!-- Socket Groups Template -->
                     <DataTemplate DataType="{x:Type blockItemTypes:SocketGroupBlockItem}">
                         <userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" />
                     </DataTemplate>
 
-					<!-- SocketsBlock Template -->
-					<DataTemplate DataType="{x:Type blockItemTypes:SocketsBlockItem}">
-						<userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" />
-					</DataTemplate>
-					
-					
-					
-					
+
+                    <!-- SocketsBlock Template -->
+                    <DataTemplate DataType="{x:Type blockItemTypes:SocketsBlockItem}">
+                        <userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" />
+                    </DataTemplate>
+
 
                     <!-- Play Effect Block Template -->
                     <DataTemplate DataType="{x:Type blockItemTypes:PlayEffectBlockItem}">

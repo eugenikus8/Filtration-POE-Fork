@@ -140,22 +140,45 @@ namespace Filtration.Parser.Services
 
 
                     case "Rarity":
-                    {
-                        RemoveExistingBlockItemsOfType<RarityBlockItem>(block);
-
-                        var blockItemValue = new RarityBlockItem();
-                        var result = Regex.Match(trimmedLine, @"^\w+\s+([><!=]{0,2})\s*(\w+)$");
-                        if (result.Groups.Count == 3)
                         {
-                            blockItemValue.FilterPredicate.PredicateOperator =
-                                EnumHelper.GetEnumValueFromDescription<FilterPredicateOperator>(string.IsNullOrEmpty(result.Groups[1].Value) ? "=" : result.Groups[1].Value);
-                            blockItemValue.FilterPredicate.PredicateOperand =
-                                (int)EnumHelper.GetEnumValueFromDescription<ItemRarity>(result.Groups[2].Value);
+                            RemoveExistingBlockItemsOfType<RarityBlockItem>(block);
+
+                            var blockItemValue = new RarityBlockItem();
+
+                            // Определяем возможные качества
+                            var rarityOrder = new List<string> { "Normal", "Magic", "Rare", "Unique" };
+                            var presentRarities = rarityOrder.Where(r => trimmedLine.Contains(r)).ToList();
+
+                            if (presentRarities.Count > 1)
+                            {
+                                // Если несколько уровней качества, преобразуем в формат <= MaxRarity
+                                var maxRarity = presentRarities.Last();
+                                trimmedLine = $"Item <= {maxRarity}";
+                            }
+                            else if (presentRarities.Count == 1 && !Regex.IsMatch(trimmedLine, @"[><!=]"))
+                            {
+                                // Если одно качество и нет оператора, добавляем "="
+                                trimmedLine = $"Item = {presentRarities.First()}";
+                            }
+
+                            // Применяем регулярное выражение только после модификации строки
+                            var result = Regex.Match(trimmedLine, @"^\w+\s+([><!=]{0,2})\s*(\w+)$");
+                            if (result.Groups.Count == 3)
+                            {
+                                blockItemValue.FilterPredicate.PredicateOperator =
+                                    EnumHelper.GetEnumValueFromDescription<FilterPredicateOperator>(string.IsNullOrEmpty(result.Groups[1].Value) ? "=" : result.Groups[1].Value);
+                                blockItemValue.FilterPredicate.PredicateOperand =
+                                    (int)EnumHelper.GetEnumValueFromDescription<ItemRarity>(result.Groups[2].Value);
+                            }
+
+                            block.BlockItems.Add(blockItemValue);
+                            break;
                         }
 
-                        block.BlockItems.Add(blockItemValue);
-                        break;
-                    }
+
+
+
+
 
                     case "GemQualityType":
                     {
