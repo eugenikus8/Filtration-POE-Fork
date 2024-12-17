@@ -48,6 +48,9 @@ namespace Filtration.ItemFilterPreview.Services
             if (blockItemType == typeof(LinkedSocketsBlockItem))
                 return LinkedSocketsBlockItemMatch((LinkedSocketsBlockItem)blockItem, item);
 
+            if (blockItemType == typeof(SocketsBlockItem))
+                return SocketsBlockItemMatch((SocketsBlockItem)blockItem, item);
+
             if (blockItemType == typeof(QualityBlockItem))
                 return QualityBlockItemMatch((QualityBlockItem)blockItem, item);
 
@@ -116,6 +119,11 @@ namespace Filtration.ItemFilterPreview.Services
         private static bool LinkedSocketsBlockItemMatch(LinkedSocketsBlockItem linkedSocketsBlockItem, IItem item)
         {
             return NumericFilterPredicateBlockItemMatch(linkedSocketsBlockItem, item.LinkedSockets);
+        }
+
+        private static bool SocketsBlockItemMatch(SocketsBlockItem socketsBlockItem, IItem item)
+        {
+            return NumericFilterPredicateBlockItemMatch(socketsBlockItem, item.SocketCount);
         }
 
         private static bool QualityBlockItemMatch(QualityBlockItem qualityBlockItem, IItem item)

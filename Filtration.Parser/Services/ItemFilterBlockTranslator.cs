@@ -296,7 +296,7 @@ namespace Filtration.Parser.Services
                     }
                     case "Sockets":
                     {
-                       AddStringListItemToBlockItems<SocketsBlockItem>(block, trimmedLine);
+                        AddNumericFilterPredicateItemToBlockItems<SocketsBlockItem>(block, trimmedLine);
                         break;
                     }
                     case "SocketGroup":

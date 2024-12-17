@@ -29,6 +29,7 @@ namespace Filtration.ObjectModel
         int HasEaterOfWorldsImplicit { get; set; }
         int HasSearingExarchImplicit { get; set; }
         ItemRarity ItemRarity { get; set; }
+        int SocketCount { get; }
 
         GemQualityType GemQualityType { get; set; }
 
