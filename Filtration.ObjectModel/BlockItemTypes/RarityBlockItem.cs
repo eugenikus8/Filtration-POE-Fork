@@ -22,12 +22,10 @@ namespace Filtration.ObjectModel.BlockItemTypes
         }
 
         public override string PrefixText => "Rarity";
-        public override string OutputText => PrefixText + " " + FilterPredicate.PredicateOperator
-            .GetAttributeDescription() + " " + ((ItemRarity) FilterPredicate.PredicateOperand).GetAttributeDescription();
+        public override string OutputText => "Rarity " + FilterPredicate.PredicateOperator.GetAttributeDescription() + " " + ((ItemRarity) FilterPredicate.PredicateOperand).GetAttributeDescription();
         public override int MaximumAllowed => 2;
         public override string DisplayHeading => "ItemRarity";
-        public override string SummaryText => "Rarity " + FilterPredicate.PredicateOperator.GetAttributeDescription() + " " +
-                                              ((ItemRarity) FilterPredicate.PredicateOperand).GetAttributeDescription();
+        public override string SummaryText => OutputText;
         public override Color SummaryBackgroundColor => Colors.LightCoral;
         public override Color SummaryTextColor => Colors.White;
         public override BlockItemOrdering SortOrder => BlockItemOrdering.Rarity;
