@@ -17,6 +17,7 @@ Daggers
 Divination Cards
 Embers of the Allflame
 Fishing Rods
+Flasks
 Gems
 Gloves
 Gold
@@ -59,6 +60,7 @@ Sanctum Research
 Sceptres
 Sentinels
 Shields
+Stackable Currency
 Staves
 Support Gems
 Thrusting One Hand Swords
@@ -72,3 +74,16 @@ Utility Flasks
 Vault Keys
 Wands
 Warstaves
+
+Crossbows
+Flails
+Foci
+Omen
+Pinnacle Keys
+Quarterstaves
+Socketable
+Spears
+Tablet
+Traps
+Trial Coins
+Waystones
