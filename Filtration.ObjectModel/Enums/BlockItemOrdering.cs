@@ -43,6 +43,7 @@ namespace Filtration.ObjectModel.Enums
         EnchantmentPassiveNum,
         EnchantmentPassiveNode,
         MapTier,
+        WaystoneTier,
         BligtedMap,
         UberBlightedMap,
         HasImplicitMod,

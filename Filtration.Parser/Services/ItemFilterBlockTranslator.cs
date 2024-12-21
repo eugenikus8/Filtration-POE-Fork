@@ -563,6 +563,11 @@ namespace Filtration.Parser.Services
                         AddNumericFilterPredicateItemToBlockItems<MapTierBlockItem>(block, trimmedLine);
                         break;
                     }
+                    case "WaystoneTier":
+                    {
+                        AddNumericFilterPredicateItemToBlockItems<WaystoneTierBlockItem>(block, trimmedLine);
+                        break;
+                    }
                     case "BlightedMap":
                     {
                         AddBooleanItemToBlockItems<BlightedMapBlockItem>(block, trimmedLine);
