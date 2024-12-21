@@ -4169,6 +4169,7 @@ Distilled Isolation
 Distilled Paranoia
 Distilled Suffering
 
+Waystone
 Waystone (Tier 1)
 Waystone (Tier 2)
 Waystone (Tier 3)
