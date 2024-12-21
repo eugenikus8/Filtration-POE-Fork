@@ -123,9 +123,9 @@
 
 
                     <!-- SocketsBlock Template -->
-                    <DataTemplate DataType="{x:Type blockItemTypes:SocketsBlockItem}">
+                    <!--<DataTemplate DataType="{x:Type blockItemTypes:SocketsBlockItem}">
                         <userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" />
-                    </DataTemplate>
+                    </DataTemplate>-->
 
 
                     <!-- Play Effect Block Template -->
