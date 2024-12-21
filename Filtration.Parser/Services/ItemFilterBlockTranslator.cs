@@ -707,12 +707,21 @@ namespace Filtration.Parser.Services
 
         private static void SetNumericFilterPredicateFromString(NumericFilterPredicate predicate, string inputString)
         {
-            var result = Regex.Match(inputString, @"^\w+\s+([><=]{0,2})\s*(\d{0,4})$");
-            if (result.Groups.Count != 3) return;
-
+            // Удаляем кавычки (если они есть) перед парсингом
+            inputString = inputString.Replace("\"", "").Replace("'", "");
+            // Используем обновленное регулярное выражение
+            var result = Regex.Match(inputString, @"^\w+\s*([><=]{0,2})\s*(\d{0,4})([RGBADW]{0,6})$");
+            // Проверяем, что строка соответствует шаблону
+            if (result.Groups.Count < 4) return;
+            // Получаем оператор (по умолчанию "=")
+            string operatorValue = result.Groups[1].Value;
             predicate.PredicateOperator =
-                EnumHelper.GetEnumValueFromDescription<FilterPredicateOperator>(string.IsNullOrEmpty(result.Groups[1].Value) ? "=" : result.Groups[1].Value);
-            predicate.PredicateOperand = Convert.ToInt16(result.Groups[2].Value);
+            EnumHelper.GetEnumValueFromDescription<FilterPredicateOperator>(string.IsNullOrEmpty(operatorValue) ? "=" : operatorValue);
+            // Получаем операнд, если он существует (по умолчанию "0")
+            string operandValue = result.Groups[2].Value;
+            predicate.PredicateOperand = string.IsNullOrEmpty(operandValue) ? 0 : Convert.ToInt16(operandValue);
+            // Получаем строку с цветами сокетов
+            string socketColors = result.Groups[3].Value;
         }
 
         private static void AddStringListItemToBlockItems<T>(IItemFilterBlock block, string inputString) where T : StringListBlockItem
