@@ -60,6 +60,7 @@
     <Compile Include="BlockItemBaseTypes\IntegerBlockItem.cs" />
     <Compile Include="BlockItemBaseTypes\NumericFilterPredicateBlockItem.cs" />
     <Compile Include="BlockItemBaseTypes\StringListBlockItem.cs" />
+    <Compile Include="BlockItemTypes\WaystoneTierBlockItem.cs" />
     <Compile Include="BlockItemTypes\TransfiguredGemBlockItem.cs" />
     <Compile Include="BlockItemTypes\AnyEnchantmentBlockItem.cs" />
     <Compile Include="BlockItemTypes\MinimalBlockItem.cs" />

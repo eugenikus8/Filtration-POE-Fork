@@ -241,6 +241,7 @@ namespace Filtration.ViewModels
             typeof (SynthesisedItemBlockItem),
             typeof (FracturedItemBlockItem),
             typeof (MapTierBlockItem),
+            typeof (WaystoneTierBlockItem),
             typeof (BlightedMapBlockItem),
             typeof (UberBlightedMapBlockItem),
             typeof (GemLevelBlockItem),

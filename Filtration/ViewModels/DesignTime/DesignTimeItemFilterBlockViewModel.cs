@@ -143,6 +143,7 @@ namespace Filtration.ViewModels.DesignTime
                                                          typeof (FracturedItemBlockItem),
                                                          typeof (AnyEnchantmentBlockItem),
                                                          typeof (MapTierBlockItem),
+                                                         typeof (WaystoneTierBlockItem),
                                                          typeof (BlightedMapBlockItem),
                                                          typeof (UberBlightedMapBlockItem),
                                                          typeof (GemLevelBlockItem),
