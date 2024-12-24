@@ -17,7 +17,7 @@ namespace Filtration.ObjectModel.BlockItemTypes
 
         public override string PrefixText => "WaystoneTier";
         public override int MaximumAllowed => 2;
-        public override string DisplayHeading => "WaystoneTier";
+        public override string DisplayHeading => "WaystoneTier(POE2)";
         public override string SummaryText => "Waystone Tier " + FilterPredicate;
         public override Color SummaryBackgroundColor => Colors.DarkSlateGray;
         public override Color SummaryTextColor => Colors.White;
