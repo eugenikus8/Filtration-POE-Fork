@@ -17,7 +17,7 @@ namespace Filtration.ObjectModel.BlockItemTypes
         public override string PrefixText => "BaseDefencePercentile";
         public override int MaximumAllowed => 1;
         public override string DisplayHeading => "BaseDefencePercentile";
-        public override string SummaryText => "Base Defence Percentile " + FilterPredicate;
+        public override string SummaryText => "Base DP " + FilterPredicate;
         public override Color SummaryBackgroundColor => Colors.Gray;
         public override Color SummaryTextColor => Colors.White;
         public override BlockItemOrdering SortOrder => BlockItemOrdering.BaseDefencePercentile;
