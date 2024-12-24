@@ -11,7 +11,8 @@ Filtration by [Ben Wallis](https://github.com/ben-wallis/Filtration) is an edito
 > ## Who can help implement these changes? I don't understand how to do this.
 > On the left - what the function window looks like at the moment in the program, in the center - how it should be implemented, on the right how the text should ultimately be displayed.
   
-![filtration-new-feature-dream](https://github.com/user-attachments/assets/2cba487a-2c72-4379-8628-9b9d001b7b78)
+![filtration-new-feature-2](https://github.com/user-attachments/assets/41c26dcd-4b12-4a14-8fbf-7a1a91e6626e)
+
 
 
 
@@ -33,10 +34,12 @@ If you'd like to make your script fully compatible with Filtration, please take 
 ## Screenshots
 
 ##### Main Window
-![2024-12-22_140321](https://github.com/user-attachments/assets/79137ecc-73b7-45bf-8e0d-5d77f7ad90e4)
+![2024-12-25_002700](https://github.com/user-attachments/assets/6279f07f-678b-4ca9-ba77-23e410e474ff)
+
 
 
 ##### Theme Editor
-![2024-12-24_013426](https://github.com/user-attachments/assets/50e05ef4-9ca7-49a4-a15f-720cec7a425f)
+![2024-12-25_002624](https://github.com/user-attachments/assets/9850bfc4-e978-4a53-ad36-eca68950de36)
+
 
 
