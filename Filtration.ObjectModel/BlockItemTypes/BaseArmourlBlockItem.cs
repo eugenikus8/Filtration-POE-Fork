@@ -17,7 +17,7 @@ namespace Filtration.ObjectModel.BlockItemTypes
         public override string PrefixText => "BaseArmour";
         public override int MaximumAllowed => 1;
         public override string DisplayHeading => "BaseArmour";
-        public override string SummaryText => "Base Armour " + FilterPredicate;
+        public override string SummaryText => "Base AR " + FilterPredicate;
         public override Color SummaryBackgroundColor => Colors.PaleVioletRed;
         public override Color SummaryTextColor => Colors.White;
         public override BlockItemOrdering SortOrder => BlockItemOrdering.BaseArmour;

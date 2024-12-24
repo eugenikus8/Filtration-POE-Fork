@@ -17,7 +17,7 @@ namespace Filtration.ObjectModel.BlockItemTypes
         public override string PrefixText => "BaseEnergyShield";
         public override int MaximumAllowed => 1;
         public override string DisplayHeading => "BaseEnergyShield";
-        public override string SummaryText => "Base Energy Shield " + FilterPredicate;
+        public override string SummaryText => "Base ES " + FilterPredicate;
         public override Color SummaryBackgroundColor => Colors.RoyalBlue;
         public override Color SummaryTextColor => Colors.White;
         public override BlockItemOrdering SortOrder => BlockItemOrdering.BaseEnergyShield;
