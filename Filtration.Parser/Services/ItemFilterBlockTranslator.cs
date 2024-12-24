@@ -176,10 +176,6 @@ namespace Filtration.Parser.Services
                         }
 
 
-
-
-
-
                     case "GemQualityType":
                     {
                          RemoveExistingBlockItemsOfType<GemQualityTypeBlockItem>(block);
@@ -201,8 +197,45 @@ namespace Filtration.Parser.Services
 
 
 
+               //case "Sockets":
+               //   {
+               //      RemoveExistingBlockItemsOfType<SocketsBlockItem>(block);
+               //      var blockItemValue = new SocketsBlockItem();
+
+               //      // Удаляем кавычки из строки
+               //      trimmedLine = trimmedLine.Replace("\"", "").Replace("'", "");
+
+               //      var result = Regex.Match(trimmedLine, @"^\w+\s*([><=]{0,2})\s*(\d{0,4})?\s*([A-Za-z]{0,6})$");
+
+               //      // Проверяем, что строка соответствует шаблону
+               //      if (result.Groups.Count < 4)
+               //         break;
+
+               //      // Задаём оператор
+               //      string operatorValue = result.Groups[1].Value;
+               //      blockItemValue.FilterPredicate.PredicateOperator =
+               //          EnumHelper.GetEnumValueFromDescription<FilterPredicateOperator>(
+               //              string.IsNullOrEmpty(operatorValue) ? "=" : operatorValue);
+
+               //      // Задаём операнд (по умолчанию 0)
+               //      string operandValue = result.Groups[2].Value;
+               //      blockItemValue.FilterPredicate.PredicateOperand =
+               //          string.IsNullOrEmpty(operandValue) ? 0 : Convert.ToInt16(operandValue);
+
+               //      // Парсим строку с цветами сокетов
+               //      string colorSockets = result.Groups[3].Value;
+               //      ParseColorSockets(colorSockets, blockItemValue.FilterPredicate);
+
+               //      block.BlockItems.Add(blockItemValue);
+               //      break;
+               //   }
 
 
+                    case "Sockets":
+                    {
+                        AddNumericFilterPredicateItemToBlockItems<SocketsBlockItem>(block, trimmedLine);
+                        break;
+                    }
 
                     case "Class":
                     {
@@ -294,11 +327,13 @@ namespace Filtration.Parser.Services
                         AddNumericFilterPredicateItemToBlockItems<HeightBlockItem>(block, trimmedLine);
                         break;
                     }
-                    case "Sockets":
-                    {
-                        AddNumericFilterPredicateItemToBlockItems<SocketsBlockItem>(block, trimmedLine);
-                        break;
-                    }
+
+                    //case "Sockets":
+                    //{
+                    //    AddNumericFilterPredicateItemToBlockItems<SocketsBlockItem>(block, trimmedLine);
+                    //    break;
+                    //}
+
                     case "SocketGroup":
                     {
                         AddStringListItemToBlockItems<SocketGroupBlockItem>(block, trimmedLine);
@@ -710,24 +745,61 @@ namespace Filtration.Parser.Services
             block.BlockItems.Add(blockItem);
         }
 
-        private static void SetNumericFilterPredicateFromString(NumericFilterPredicate predicate, string inputString)
-        {
+
+
+
+         private static void SetNumericFilterPredicateFromString(NumericFilterPredicate predicate, string inputString)
+         {
             // Удаляем кавычки (если они есть) перед парсингом
             inputString = inputString.Replace("\"", "").Replace("'", "");
+
             // Используем обновленное регулярное выражение
-            var result = Regex.Match(inputString, @"^\w+\s*([><=]{0,2})\s*(\d{0,4})([RGBADW]{0,6})$");
-            // Проверяем, что строка соответствует шаблону
-            if (result.Groups.Count < 4) return;
+            var result = Regex.Match(inputString, @"^\w+\s*(!=|[><=]{0,2})\s*(\d{0,4})([RGBADW]{0,6})$");
+
+            if (result.Groups.Count < 4) return; // Проверяем, что строка соответствует шаблону
+            
             // Получаем оператор (по умолчанию "=")
             string operatorValue = result.Groups[1].Value;
             predicate.PredicateOperator =
             EnumHelper.GetEnumValueFromDescription<FilterPredicateOperator>(string.IsNullOrEmpty(operatorValue) ? "=" : operatorValue);
+
             // Получаем операнд, если он существует (по умолчанию "0")
             string operandValue = result.Groups[2].Value;
             predicate.PredicateOperand = string.IsNullOrEmpty(operandValue) ? 0 : Convert.ToInt16(operandValue);
+
+            //string operandValue = result.Groups[2].Value;
+            //if (!string.IsNullOrEmpty(operandValue))
+            //{
+            //    predicate.PredicateOperand = Convert.ToInt16(operandValue);
+            //}
+
             // Получаем строку с цветами сокетов
             string socketColors = result.Groups[3].Value;
+
+            //// Распределяем цвета по свойствам
+            //RedSockets = 0;
+            //GreenSockets = 0;
+            //BlueSockets = 0;
+            //AbyssSockets = 0;
+            //DelveSockets = 0;
+            //WhiteSockets = 0;
+
+            //foreach (char color in socketColors)
+            //{
+            //    switch (color)
+            //    {
+            //        case 'R': RedSockets++; break;
+            //        case 'G': GreenSockets++; break;
+            //        case 'B': BlueSockets++; break;
+            //        case 'A': AbyssSockets++; break;
+            //        case 'D': DelveSockets++; break;
+            //        case 'W': WhiteSockets++; break;
+            //    }
+            //}
         }
+
+
+
 
         private static void AddStringListItemToBlockItems<T>(IItemFilterBlock block, string inputString) where T : StringListBlockItem
         {
@@ -738,6 +810,9 @@ namespace Filtration.Parser.Services
 
         private static void PopulateListFromString(ICollection<string> list, string inputString)
         {
+            // Удаляем кавычки (если они есть) перед парсингом
+            //inputString = Regex.Replace(inputString, @"(?<=\d|[<>]=?|!=?)[""'](?=\d|[<>]=?|!=?)", "");
+
             var result = Regex.Matches(inputString, @"[^\s""]+|""([^""]*)""");
             foreach (Match match in result)
             {
@@ -746,6 +821,19 @@ namespace Filtration.Parser.Services
                     : match.Groups[0].Value);
             }
         }
+
+
+        //private static void PopulateListFromString(ICollection<string> list, string inputString)
+        //{
+        //    var result = Regex.Matches(inputString, @"[^\s""]+|""([^""]*)""");
+        //    foreach (Match match in result)
+        //    {
+        //        list.Add(match.Groups[1].Success
+        //            ? match.Groups[1].Value
+        //            : match.Groups[0].Value);
+        //    }
+        //}
+
 
         public void ReplaceAudioVisualBlockItemsFromString(ObservableCollection<IItemFilterBlockItem> blockItems, string inputString)
         {
